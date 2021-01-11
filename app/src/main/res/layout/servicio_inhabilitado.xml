@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<py.com.personal.mimundo.disenhos.RelativeLayout2
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/servicio_estado_loading"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_below="@+id/titulo_estado"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/switch_bakground">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical|left"
+            android:layout_height="72dp"
+            android:paddingLeft="16dp"
+            android:src="@drawable/ic_lock_red700" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/cabecera_inhabilitado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:minHeight="72dp"
+            android:paddingLeft="72dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:textSize="18sp"
+                android:text="Inhabilitado"
+                android:textColor="@color/red700"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No tienes habilitado el servicio."
+                android:paddingBottom="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/titulo_primario_card_view" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_below="@+id/cabecera_inhabilitado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/inhabilitado_background"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Tu línea no puede acceder a este servicio, para más datos contactanos."/>
+            </RelativeLayout>
+    </RelativeLayout>
+</py.com.personal.mimundo.disenhos.RelativeLayout2>

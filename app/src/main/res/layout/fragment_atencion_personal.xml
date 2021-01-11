@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/formulario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/celeste_institucional"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="8dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/header_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Atención "
+                    android:textColor="@color/white"
+                    android:textSize="32sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/header_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Personal"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/atencion_cliente" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <LinearLayout style="@style/conetnedorLabelEditTextStyle">
+
+                    <TextView
+                        android:id="@+id/nombres_apellidos_label"
+                        style="@style/labelStyle2"
+                        android:text="@string/nombres_apellidos_label" />
+
+                    <EditText
+                        android:id="@+id/nombres_apellidos_field"
+                        style="@style/editTexTStyle3" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/conetnedorLabelEditTextStyle">
+
+                    <TextView
+                        android:id="@+id/email_label"
+                        style="@style/labelStyle2"
+                        android:text="@string/email_label" />
+
+                    <EditText
+                        android:id="@+id/email_field"
+                        style="@style/editTexTStyle3" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/conetnedorLabelEditTextStyle">
+
+                    <TextView
+                        android:id="@+id/nro_linea_label"
+                        style="@style/labelStyle2"
+                        android:text="@string/nro_linea_label" />
+
+                    <EditText
+                        android:id="@+id/nro_linea_field"
+                        style="@style/editTexTStyle3" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/conetnedorLabelEditTextStyle">
+
+                    <TextView
+                        android:id="@+id/sugerencias_label"
+                        style="@style/labelStyle2"
+                        android:text="@string/sugerencias_label" />
+
+                    <EditText
+                        android:id="@+id/sugerencias_field"
+                        style="@style/editTexTStyle3"
+                        android:layout_height="wrap_content"
+                        android:lines="5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="32dp"
+                    android:gravity="right">
+
+                    <Button
+                        android:id="@+id/button_enviar_sugerencia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/minHeightRaisedButton"
+                        android:background="@color/celeste_institucional"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="@string/enviar_reclamo"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

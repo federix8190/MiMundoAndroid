@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="24dp"
+    android:layout_marginLeft="24dp"
+    android:background="@color/white">
+
+    <ProgressBar
+        android:id="@+id/progressbar_InfoGrupoFacturacion"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/scroll_InfoGrupoFacturacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/infoGrupoTitle"
+                style="@style/subEncabezado1"
+                android:layout_alignParentTop="true"
+                android:text="@string/infoGrupoFacturacionTitle" />
+
+            <View
+                android:id="@+id/divisor_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/infoGrupoTitle"
+                android:background="@color/gray300"
+                android:paddingBottom="16dp" />
+
+            <ListView
+                android:id="@+id/listaInfoGrupo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divisor_1"
+                android:background="@android:color/white"
+                android:divider="@color/transparente"
+                android:paddingTop="16dp"
+                android:listSelector="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/segundoTitulo"
+                style="@style/subEncabezado1"
+                android:layout_below="@id/listaInfoGrupo"
+                android:text="Líneas" />
+
+            <View
+                android:id="@+id/divisor_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/segundoTitulo"
+                android:background="@color/gray300" />
+
+            <ListView
+                android:id="@+id/listaLineasInfoGrupo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:layout_below="@id/divisor_2"
+                android:background="@android:color/white"
+                android:listSelector="@android:color/transparent" />
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

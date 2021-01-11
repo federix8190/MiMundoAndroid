@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RelativeLayout
+                android:id="@+id/contenedorInfoEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:minHeight="88dp">
+
+                <TextView
+                    android:id="@+id/titulo_estado"
+                    style="@style/subEncabezado1"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/titulo_estado"
+                    android:textColor="@color/verde_entretenimiento"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/divisor_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="32dp"
+                    android:background="@color/gray100"
+                    android:layout_below="@id/titulo_estado"
+                    android:paddingBottom="16dp" />
+
+                <include layout="@layout/servicio_loading" />
+
+                <ViewStub
+                    android:id="@+id/stub"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divisor_1"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/restitucion_title"
+                style="@style/subEncabezado1"
+                android:layout_below="@+id/contenedorInfoEstado"
+                android:text="@string/recarga_contrafactura_title"
+                android:textColor="@color/verde_entretenimiento"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="32dp"
+                android:background="@color/gray100"
+                android:paddingBottom="16dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/restitucion_title"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/formulario_background"
+                android:minHeight="56dp"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/descripcion_info_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titulo_info"
+                    android:padding="4dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/recarga_description_1"
+                    android:textColor="@color/titulo_secundario_card_view"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/descripcion_info_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/descripcion_info_1"
+                    android:padding="4dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/recarga_description_2"
+                    android:textColor="@color/titulo_secundario_card_view"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

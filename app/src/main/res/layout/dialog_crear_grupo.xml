@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="250dp"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/mensaje_crear_grupo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/nombre_grupo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/mensaje_crear_grupo"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:singleLine="true"
+        android:textColorHint="@color/common_signin_btn_dark_text_disabled" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombre_grupo"
+        android:layout_marginBottom="8dp"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/boton_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:padding="4dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/boton_activar_background"
+            android:text="@string/backtones_cancelar"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/boton_crear_grupo"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/boton_desactivar_background"
+            android:text="@string/backtones_activar"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>

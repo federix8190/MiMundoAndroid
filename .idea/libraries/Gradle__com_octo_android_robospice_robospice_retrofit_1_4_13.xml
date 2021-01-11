@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.octo.android.robospice:robospice-retrofit:1.4.13">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.octo.android.robospice/robospice-retrofit/1.4.13/849512e27999dee4a287d01311fc488844ceb143/robospice-retrofit-1.4.13.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.octo.android.robospice/robospice-retrofit/1.4.13/7294232eb87a632a40bedadf47de47ee21c398ee/robospice-retrofit-1.4.13-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.octo.android.robospice/robospice-retrofit/1.4.13/467d74e99c1daaabef2bcd6424176f92145b79bd/robospice-retrofit-1.4.13-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/editar_perfil_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="@string/editar_perfil_title"
+                android:textColor="@color/encabezado"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/divisor_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/editar_perfil_title"
+                android:background="@color/gray300"
+                android:paddingBottom="16dp" />
+
+            <LinearLayout
+                android:id="@+id/nombre"
+                style="@style/conetnedorLabelEditTextStyle"
+                android:layout_below="@id/divisor_1"
+                android:minHeight="60dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/nombre_label"
+                    style="@style/labelStyle2"
+                    android:text="Titular"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/nombre_field"
+                    android:enabled="false"
+                    style="@style/editTexTStyle3" />
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:id="@+id/apellido"
+                style="@style/conetnedorLabelEditTextStyle"
+                android:layout_below="@id/nombre"
+                android:minHeight="60dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/apellido_label"
+                    style="@style/labelStyle2"
+                    android:text="@string/apellido_usuario"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/apellido_field"
+                    android:enabled="false"
+                    style="@style/editTexTStyle3" />
+            </LinearLayout>-->
+
+            <!--<LinearLayout
+                android:id="@+id/tipo_documento"
+                style="@style/conetnedorLabelEditTextStyle"
+                android:layout_below="@id/apellido"
+                android:minHeight="60dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/tipo_documento_label"
+                    style="@style/labelStyle2"
+                    android:text="@string/tipo_documento"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/tipo_documento_field"
+                    style="@style/spinnerActionBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp" />
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/numero_documento"
+                style="@style/conetnedorLabelEditTextStyle"
+                android:layout_below="@id/nombre"
+                android:minHeight="60dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/numero_documento_label"
+                    style="@style/labelStyle2"
+                    android:text="@string/numero_documento"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/numero_documento_field"
+                    android:enabled="false"
+                    style="@style/editTexTStyle3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/telefono_contacto"
+                style="@style/conetnedorLabelEditTextStyle"
+                android:layout_below="@id/numero_documento"
+                android:minHeight="60dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/telefono_contacto_label"
+                    style="@style/labelStyle2"
+                    android:text="@string/telefono_contacto"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/telefono_contacto_field"
+                    android:enabled="false"
+                    style="@style/editTexTStyle3" />
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:id="@+id/ciudad"
+                style="@style/conetnedorLabelEditTextStyle"
+                android:layout_below="@id/telefono_contacto"
+                android:minHeight="60dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/ciudad_label"
+                    style="@style/labelStyle2"
+                    android:text="@string/ciudad"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/ciudad_field"
+                    android:enabled="false"
+                    style="@style/editTexTStyle3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/barrio"
+                style="@style/conetnedorLabelEditTextStyle"
+                android:layout_below="@id/ciudad"
+                android:minHeight="60dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/barrio_label"
+                    style="@style/labelStyle2"
+                    android:text="@string/barrio"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/barrio_field"
+                    android:enabled="false"
+                    style="@style/editTexTStyle3" />
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/direccion_particular"
+                style="@style/conetnedorLabelEditTextStyle"
+                android:layout_below="@id/telefono_contacto"
+                android:minHeight="60dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/direccion_particular_label"
+                    style="@style/labelStyle2"
+                    android:text="@string/direccion_particular"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/direccion_particular_field"
+                    android:enabled="false"
+                    style="@style/editTexTStyle3" />
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:id="@+id/direccion_facturas"
+                style="@style/conetnedorLabelEditTextStyle"
+                android:layout_below="@id/direccion_particular"
+                android:minHeight="60dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/direccion_facturas_label"
+                    style="@style/labelStyle2"
+                    android:text="@string/direccion_facturas"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/direccion_facturas_field"
+                    android:enabled="false"
+                    style="@style/editTexTStyle3" />
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/email"
+                style="@style/conetnedorLabelEditTextStyle"
+                android:layout_below="@id/direccion_particular"
+                android:minHeight="60dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/email_label"
+                    style="@style/labelStyle2"
+                    android:text="@string/email"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/email_field"
+                    android:enabled="false"
+                    style="@style/editTexTStyle3" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_editar_datos_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_below="@id/email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/raise_button_style"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+                android:text="Cambiar correo electrónico"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+</FrameLayout>

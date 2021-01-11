@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="1dp">
+    <py.com.personal.mimundo.disenhos.RelativeLayout4
+        android:id="@+id/relative_backtone"
+        android:background="@drawable/switch_bakground"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:id="@+id/grid_image"
+            android:layout_width="match_parent"
+            android:src="@drawable/ic_headset_big"
+            android:layout_height="180dp">
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_below="@id/grid_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:gravity="center"
+            android:background="@drawable/detalle_terminal_background">
+            <TextView
+                android:id="@+id/grid_text_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingLeft="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="LATINA">
+            </TextView>
+        </RelativeLayout>
+    </py.com.personal.mimundo.disenhos.RelativeLayout4>
+</LinearLayout>

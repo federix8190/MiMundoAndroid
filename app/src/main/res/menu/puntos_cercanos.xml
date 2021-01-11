@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/todosPuntosMapa"
+            android:title="Todos"
+            />
+        <item android:id="@+id/sucursalesMapa"
+            android:title="Sucursales" />
+        <item android:id="@+id/puntosVentaMapa"
+            android:title="Puntos de Venta" />
+        <item android:id="@+id/Envios"
+            android:title="Envios Personal" />
+    </group>
+</menu>

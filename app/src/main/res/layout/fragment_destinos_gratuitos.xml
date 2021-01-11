@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressbar_login"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Estado del servicio -->
+
+            <TextView
+                android:id="@+id/titulo_estado"
+                style="@style/subEncabezado1"
+                android:text="@string/titulo_estado"
+                android:textColor="@color/verde_entretenimiento"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/divisor_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="32dp"
+                android:background="@color/gray100"
+                android:paddingBottom="16dp" />
+
+            <include layout="@layout/servicio_loading" />
+
+            <ViewStub
+                android:id="@+id/stub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+
+            <!-- Lista de Servicios de destinos gratuitos -->
+
+            <LinearLayout
+                android:id="@+id/lista_servicios_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/servicios_title"
+                    style="@style/subEncabezado1"
+                    android:text="Servicios Disponibles"
+                    android:textColor="@color/verde_entretenimiento"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="32dp"
+                    android:background="@color/gray100"
+                    android:paddingBottom="16dp" />
+
+                <TextView
+                    android:id="@+id/servicios_disponibles"
+                    android:text="Cargando"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <!-- Lista de Destinos Gratuitos -->
+
+            <LinearLayout
+                android:id="@+id/lista_destinos_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/destinos_title"
+                    style="@style/subEncabezado1"
+                    android:text="Destinos"
+                    android:textColor="@color/verde_entretenimiento"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="32dp"
+                    android:background="@color/gray100"
+                    android:paddingBottom="16dp" />
+
+                <!--<RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60dp"
+                    android:background="@color/white">
+
+                    <ListView
+                        android:id="@+id/lista_destinos_gratuitos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="16dp"
+                        android:divider="@null" />
+                </RelativeLayout>-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/white">
+
+                    <EditText
+                        android:id="@+id/nroLineaOrigen"
+                        android:inputType="number"
+                        android:layout_width="155dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/cargarLineaOrigen"
+                        android:text="Agregar"
+                        android:layout_toRightOf="@+id/nroLineaOrigen"
+                        android:textColor="@color/white"
+                        android:background="@color/primario"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="24dp"
+                        android:layout_height="@dimen/minHeightRaisedButton" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/lineas_destinos"
+                        android:scrollbars="vertical"
+                        android:layout_below="@+id/nroLineaOrigen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- Lista de Destinos Gratuitos -->
+
+            <LinearLayout
+                android:id="@+id/contenedor_boton_guardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="32dp"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/button_guadar_destinos_gratuitos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/minHeightRaisedButton"
+                    android:background="@color/celeste_institucional"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/guardar_datos"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto">
+
+    <!-- Item-based lists related attributes -->
+    <attr name="mmTextAppearance" format="reference" />
+    <attr name="mmTextAppearanceLarge" format="reference" />
+    <attr name="mmTextAppearanceMedium" format="reference" />
+    <attr name="mmTextAppearanceSmall" format="reference" />
+    <attr name="mmTextAppearanceSeparator" format="reference" />
+
+
+    <!-- -->
+    <!-- Styleables -->
+    <!-- -->
+
+
+    <!-- List items related attributes -->
+    <declare-styleable name="ItemStanby">
+        <attr name="enabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FloatingActionButton" >
+        <attr name="drawable" format="integer"/>
+        <attr name="fabColor" format="color"/>
+        <attr name="shadowRadius" format="float"/>
+        <attr name="shadowDx" format="float"/>
+        <attr name="shadowDy" format="float"/>
+        <attr name="shadowColor" format="integer"/>
+    </declare-styleable>
+
+    <!--Declaraciones para el collection view-->
+    <declare-styleable name="CollectionView">
+        <attr name="internalPadding" format="dimension" />
+        <attr name="contentTopClearance" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FloatLabelLayout">
+        <attr name="floatLabelTextAppearance" format="reference" />
+        <attr name="floatLabelPaddingLeft" format="reference|dimension" />
+        <attr name="floatLabelPaddingRight" format="reference|dimension" />
+        <attr name="floatLabelPaddingTop" format="reference|dimension" />
+        <attr name="floatLabelPaddingBottom" format="reference|dimension" />
+        <!-- The hint to display in the floating label -->
+        <attr name="floatLabelHint" format="reference|string" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="MiMundoTheme" parent="@style/_MiMundoTheme" />
+
+    <style name="_MiMundoTheme" parent="@style/Theme.AppCompat.Light">
+
+        <item name="android:editTextStyle">@style/EditTextMiMundoTheme</item>
+        <item name="android:textColorHighlight">#992ebece</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewMiMundoTheme
+        </item>
+        <item name="android:checkboxStyle">@style/CheckBoxMiMundoTheme</item>
+        <item name="android:radioButtonStyle">@style/RadioButtonMiMundoTheme</item>
+        <item name="android:buttonStyle">@style/ButtonMiMundoTheme</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonMiMundoTheme</item>
+        <item name="android:spinnerStyle">@style/SpinnerMiMundoTheme</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemMiMundoTheme</item>
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBarMiMundoTheme</item>
+        <item name="android:seekBarStyle">@style/SeekBarMiMundoTheme</item>
+        <item name="android:buttonStyleToggle">@style/ToggleMiMundoTheme</item>
+        <item name="android:listViewStyle">@style/ListViewMiMundoTheme</item>
+        <item name="android:listViewWhiteStyle">@style/ListViewMiMundoTheme.White</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItemMiMundoTheme</item>
+
+        <item name="actionBarItemBackground">@drawable/selectable_background_mimundo</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Mimundo</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Mimundo</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Mimundo</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Mimundo</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Mimundo</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_mimundo</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_mimundo</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Mimundo</item>
+
+        <!-- Light.DarkActionBar specific -->
+        <item name="actionBarWidgetTheme">@style/Theme.Mimundo.Widget</item>
+
+    </style>
+
+    <style name="ActionBar.Solid.Mimundo" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/ab_solid_mimundo</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_mimundo</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_mimundo</item>
+        <item name="progressBarStyle">@style/ProgressBar.Mimundo</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Mimundo" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@drawable/ab_transparent_mimundo</item>
+        <item name="progressBarStyle">@style/ProgressBar.Mimundo</item>
+    </style>
+
+    <style name="PopupMenu.Mimundo" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_mimundo</item>
+    </style>
+
+    <style name="DropDownListView.Mimundo" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_mimundo</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Mimundo" parent="@style/Widget.AppCompat.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_mimundo</item>
+    </style>
+
+    <style name="DropDownNav.Mimundo" parent="@style/Widget.AppCompat.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_mimundo</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_mimundo</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_mimundo</item>
+    </style>
+
+    <style name="ProgressBar.Mimundo" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_mimundo</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Mimundo" parent="@style/Widget.AppCompat.ActionButton.CloseMode">
+        <item name="android:background">@drawable/mimundotheme_btn_default_holo_light</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Mimundo.Widget" parent="@style/Theme.AppCompat">
+        <item name="popupMenuStyle">@style/PopupMenu.Mimundo</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Mimundo</item>
+    </style>
+
+</resources>

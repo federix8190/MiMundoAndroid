@@ -1,0 +1,414 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:id="@+id/scrollFromulario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titulo_transferencia_corporativa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingTop="8dp"
+                android:text="@string/titulo_tipo_transferencia"
+                android:textColor="@color/encabezado"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/gray300"
+                android:paddingBottom="16dp" />
+
+
+            <!--Monedas-->
+
+            <RelativeLayout
+                android:id="@+id/seccion_monedas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
+
+                <RelativeLayout
+                    android:id="@+id/cabecera_transf_corp_moneda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/ic_monto" />
+
+                    <TextView
+                        android:id="@+id/moneda_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="60dp"
+                        android:text="Moneda"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cabecera_transf_corp_moneda"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="16dp"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/monedaDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/saldoMoneda_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/saldoMoneda_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Credito: "
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/saldoMoneda"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="cargando..."
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/saldoDisponible_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/saldoDisponible_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Disponible: "
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/saldoDisponible"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="cargando..."
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/inputMoneda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/monedaDatos"
+                        android:layout_centerVertical="true"
+                        android:hint="Gs."
+                        android:inputType="number"
+                        android:minHeight="48dp"
+                        android:paddingTop="8dp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <!--Minutos-->
+
+            <RelativeLayout
+                android:id="@+id/seccion_minutos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="16dp">
+
+                <RelativeLayout
+                    android:id="@+id/cabecera_transf_corp_minutos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/ic_lineastel_fact" />
+
+                    <TextView
+                        android:id="@+id/minutos_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="60dp"
+                        android:text="Minutos"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cabecera_transf_corp_minutos"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="16dp"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/saldoMinutos_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/saldoMinutos_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Disponible : "
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/saldoMinutos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="cargando..."
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/inputMinutos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/saldoMinutos_content"
+                        android:layout_centerVertical="true"
+                        android:hint="minutos."
+                        android:inputType="number"
+                        android:minHeight="48dp"
+                        android:paddingTop="8dp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <!--Mensajes-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="16dp">
+
+                <RelativeLayout
+                    android:id="@+id/cabecera_transf_corp_mensajes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/ic_mail_activacion" />
+
+                    <TextView
+                        android:id="@+id/mensajes_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="60dp"
+                        android:text="Mensajes"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cabecera_transf_corp_mensajes"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="16dp"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/saldoMensajes_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/saldoMensajes_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Disponible: "
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/saldoMensajes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="cargando..."
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/inputMensajes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/saldoMensajes_content"
+                        android:layout_centerVertical="true"
+                        android:hint="sms."
+                        android:inputType="number"
+                        android:minHeight="48dp"
+                        android:paddingTop="8dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!--Datos-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="16dp">
+
+                <RelativeLayout
+                    android:id="@+id/cabecera_transf_corp_datos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/ic_datos_activacion" />
+
+                    <TextView
+                        android:id="@+id/datos_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="60dp"
+                        android:text="Datos"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cabecera_transf_corp_datos"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="16dp"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/saldoDatos_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/saldoDatos_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Disponible: "
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/saldoDatos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="cargando..."
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/inputDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/saldoDatos_content"
+                        android:layout_centerVertical="true"
+                        android:hint="MB."
+                        android:inputType="number"
+                        android:minHeight="48dp"
+                        android:paddingTop="8dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/button_transferencia_paso3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingBottom="16dp"
+                android:paddingRight="32dp"
+                android:src="@drawable/transferir_btn" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

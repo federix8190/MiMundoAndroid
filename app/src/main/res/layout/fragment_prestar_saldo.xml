@@ -1,0 +1,191 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:layout_gravity="center" />
+
+    <ScrollView
+        android:id="@+id/pantalla"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="30"
+                android:layout_marginTop="2dp"
+                android:paddingTop="32dp"
+                android:paddingBottom="32dp"
+                android:layout_gravity="left"
+                android:background="@color/celeste_institucional"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:src="@drawable/prestame_saldo" />
+
+                <TextView
+                    android:id="@+id/title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Prestar "
+                    android:textColor="@color/white"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/title_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="saldo"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/seccion_monedas"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="70"
+                android:background="@color/formulario_background">
+
+                <py.com.personal.mimundo.disenhos.RelativeLayout1
+                    android:id="@+id/contenedor_medio_prestar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/cuerpo_presta_saldo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="16dp">
+
+                        <LinearLayout
+                            android:id="@+id/monto_recarga"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_coins" />
+
+                            <TextView
+                                android:id="@+id/monto_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/prestar_saldo_monto"
+                                android:layout_marginTop="8dp"
+                                android:textSize="16dp"
+                                android:textColor="@color/gray400"/>
+
+                            <Spinner
+                                android:id="@+id/opciones_recarga_sos"
+                                style="@style/spinnerActionBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:textSize="16sp"
+                                android:gravity="center_vertical"
+                                android:prompt="@string/seleccion_opcion_recarga_spinner_title" />
+
+                            <TextView
+                                android:id="@+id/mensaje"
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/prestamoPendiente"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cuerpo_presta_saldo"
+                        android:paddingTop="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="16dp"
+                        android:textColor="@color/titulo_primario_lista"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <py.com.personal.mimundo.disenhos.RelativeLayout3
+                        android:id="@+id/contenedor_boton_prestar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prestamoPendiente"
+                        android:padding="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right">
+
+                            <Button
+                                android:id="@+id/solicitar_recarga_sos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/minHeightRaisedButton"
+                                android:layout_alignParentBottom="true"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:layout_marginBottom="16dp"
+                                android:background="@drawable/boton_activar_recarga_prestar"
+                                android:text="@string/prestar_saldo"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:drawableLeft="@drawable/ic_check_pack"
+                                android:enabled="false"
+                                android:layout_marginRight="16dp"
+                                android:gravity="center_vertical|end" />
+
+                        </RelativeLayout>
+                    </py.com.personal.mimundo.disenhos.RelativeLayout3>
+                </py.com.personal.mimundo.disenhos.RelativeLayout1>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ViewStub
+        android:id="@+id/stub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

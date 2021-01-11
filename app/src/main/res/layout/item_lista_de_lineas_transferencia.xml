@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|left"
+    android:descendantFocusability="blocksDescendants">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/selectable_background_example">
+        <CheckBox
+            android:id="@+id/checkLineasTransferencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:clickable="false"
+            android:button="@null"
+            android:background="@drawable/check_background"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp" />
+        <TextView
+            android:id="@+id/textLineasTransferencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:paddingLeft="72dp"
+            android:minHeight="48dp"
+            android:textSize="16sp"
+            android:textColor="@color/titulo_primario_card_view"
+            android:text="prueba"/>
+    </RelativeLayout>
+</RelativeLayout>

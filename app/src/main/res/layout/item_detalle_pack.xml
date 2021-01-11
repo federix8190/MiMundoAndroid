@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_0"
+    style="@style/cardViewPacks"
+    android:layout_height="240dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/formulario_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="16dp"
+            android:text="Headlines"
+            android:textColor="@color/verde_entretenimiento"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <py.com.personal.mimundo.disenhos.RelativeLayout3
+            android:id="@+id/flat_button_editar_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="32dp"
+            android:background="@color/formulario_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/datosPacks"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="70"
+                    android:gravity="center_vertical|left"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_monedas_pack"/>
+
+                        <TextView
+                            android:id="@+id/costo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="6dp"
+                            android:text="Body1"
+                            android:textColor="@color/titulo_primario_card_view"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_reloj_pack"/>
+
+                        <TextView
+                            android:id="@+id/vigencia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:paddingTop="6dp"
+                            android:text="Body2"
+                            android:textColor="@color/titulo_primario_card_view"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_below="@+id/datosPacks"
+                    android:layout_weight="30"
+                    android:gravity="right"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical">
+
+                    <!--<Button
+                        android:id="@+id/button_regalar_pack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/minHeightRaisedButton"
+                        android:background="@drawable/boton_activar_transferencia"
+                        android:text="@string/regalar_packs_button"
+                        android:textColor="@color/titulo_primario_card_view"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" o "
+                        android:textSize="16dp"
+                        android:textColor="@color/titulo_primario_card_view"/>-->
+
+                    <Button
+                        android:id="@+id/button_activar_pack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/minHeightRaisedButton"
+                        android:text="@string/activar_packs_button"
+                        android:paddingRight="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:drawableLeft="@drawable/ic_check_pack"
+                        android:background="@color/celeste_institucional"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/button_regalar_pack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/minHeightRaisedButton"
+                        android:text="@string/regalar_packs_button"
+                        android:paddingRight="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:drawableLeft="@drawable/ic_check_pack"
+                        android:background="@color/celeste_institucional"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/button_suscribir_pack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/minHeightRaisedButton"
+                        android:text="@string/suscribir_packs_button"
+                        android:paddingRight="16dp"
+                        android:layout_marginRight="16dp"
+                        android:drawableLeft="@drawable/ic_check_pack"
+                        android:background="@color/celeste_institucional"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/button_reactivar_pack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/minHeightRaisedButton"
+                        android:text="Reactivar"
+                        android:paddingRight="16dp"
+                        android:layout_marginRight="16dp"
+                        android:drawableLeft="@drawable/ic_check_pack"
+                        android:background="@color/celeste_institucional"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </py.com.personal.mimundo.disenhos.RelativeLayout3>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

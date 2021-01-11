@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_switch_off_contenedor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/switch_bakground">
+
+    <TextView
+        android:id="@+id/desactivado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="56dp"
+        android:paddingLeft="42dp"
+        android:text="Desactivado"
+        android:textColor="@color/gray400"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="145dp"
+        android:src="@drawable/ic_desactivado" />
+
+    <RelativeLayout
+        android:id="@+id/contenedor_boton_activar_servicio"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/boton_activar_servicio"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/minHeightRaisedButton"
+            android:background="@color/verde_entretenimiento"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="ACTIVAR"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

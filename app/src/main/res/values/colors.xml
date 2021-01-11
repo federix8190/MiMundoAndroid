@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Colores de elementos principales de la interfaz-->
+    <color name="primario">@color/personal_celeste</color>
+    <color name="primarioDark">#007c88</color>
+    <color name="indicadorTabs">@color/personal_amarillo</color>
+    <color name="encabezado">#979693</color>
+    <color name="fondo_login">#00b0b9</color>
+    <color name="fondo_login_edit_text">#00a1a9</color>
+    <color name="crear_usuario_spinner">#597884</color>
+	<color name="common_signin_btn_dark_text_disabled">#FFAAAAAA</color>
+
+    <color name="fondo_caja">#F3F3F3</color>
+    <color name="texto_edit_text">#797C7C</color>
+
+    <color name="titulo_primario_lista">#070402</color>
+    <color name="titulo_secundario_lista">#8B8F91</color>
+    <color name="titulo_primario_card_view">#222222</color>
+    <color name="titulo_secundario_card_view">#757575</color>
+    <color name="icono">#757575</color>
+    <color name="formulario_background">#ECECEC</color>
+    <color name="formulario_contenedor">#FCFCFC</color>
+    <color name="linea_divisoria">#aaa</color>
+    <color name="formulario_en_tarjeta">#EFEFEF</color>
+
+    <!--Otros elementos-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_secundary">#50000000</color>
+    <color name="secundary">#68d0db</color>
+    <color name="facebook">#3B5998</color>
+
+    <!-- List-->
+    <color name="list_divider">#AAAAAA</color>
+    <color name="list_item_title">#272727</color>
+    <color name="list_background">#FFFFFF</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="lista_lineas">#2d2d2d</color>
+
+    <!--Colores de ejemplos de material design-->
+
+    <color name="divisor_seccion_color">#DBDBDB</color>
+    <color name="transparente">#00000000</color>
+    <color name="violeta">#E91E63</color>
+    <color name="violeta_light">#50e91e63</color>
+
+    <!--Paleta de colores de material-->
+
+    <!--light blue-->
+    <color name="blueLight50">#e1f5fe</color>
+    <color name="blueLight100">#b3e5fc</color>
+    <color name="blueLight200">#81d4fa</color>
+    <color name="blueLight300">#4fc3f7</color>
+    <color name="blueLight400">#29b6f6</color>
+    <color name="blueLight500">#03a9f4</color>
+    <color name="blueLight600">#039be5</color>
+    <color name="blueLight700">#0288d1</color>
+    <color name="blueLight800">#0277bd</color>
+    <color name="blueLight900">#01579b</color>
+    <color name="blueLightA100">#80d8ff</color>
+    <color name="blueLightA200">#40c4ff</color>
+    <color name="blueLightA400">#00b0ff</color>
+    <color name="blueLightA700">#0091ea</color>
+
+    <!--Cyan-->
+    <color name="cyan500">@color/celeste_institucional</color>
+    <color name="cyan50">#e0f7fa</color>
+    <color name="cyan100">#b2ebf2</color>
+    <color name="cyan200">#80deea</color>
+    <color name="cyan300">#4dd0e1</color>
+    <color name="cyan400">#26c6da</color>
+    <color name="cyan600">#00acc1</color>
+    <color name="cyan700">#0097a7</color>
+    <color name="cyan800">#00838f</color>
+    <color name="cyan900">#006064</color>
+    <color name="cyanA100">#84ffff</color>
+    <color name="cyanA200">#18ffff</color>
+    <color name="cyanA400">#00e5ff</color>
+    <color name="cyanA700">#00b8d4</color>
+
+    <!--Pink-->
+    <color name="pink50">#fce4ec</color>
+    <color name="pink100">#f8bbd0</color>
+    <color name="pink200">#f48fb1</color>
+    <color name="pink300">#f06292</color>
+    <color name="pink400">#ec407a</color>
+    <color name="pink500">#e91e63</color>
+    <color name="pink600">#d81b60</color>
+    <color name="pink700">#c2185b</color>
+    <color name="pink800">#ad1457</color>
+    <color name="pink900">#880e4f</color>
+    <color name="pinkA100">#ff80ab</color>
+    <color name="pinkA200">#ff4081</color>
+    <color name="pinkA400">#f50057</color>
+    <color name="pinkA700">#c51162</color>
+
+    <!--Purple-->
+    <color name="purple50">#f3e5f5</color>
+    <color name="purple100">#e1bee7</color>
+    <color name="purple200">#ce93d8</color>
+    <color name="purple300">#ba68c8</color>
+    <color name="purple400">#ab47bc</color>
+    <color name="purple500">#9c27b0</color>
+    <color name="purple600">#8e24aa</color>
+    <color name="purple700">#7b1fa2</color>
+    <color name="purple800">#6a1b9a</color>
+    <color name="purple900">#4a148c</color>
+    <color name="purpleA100">#ea80fc</color>
+    <color name="purpleA200">#e040fb</color>
+    <color name="purpleA400">#d500f9</color>
+    <color name="purpleA700">#aa00ff</color>
+
+    <!--Yellow-->
+    <color name="yellow50">#fffde7</color>
+    <color name="yellow100">#fff9c4</color>
+    <color name="yellow200">#fff59d</color>
+    <color name="yellow300">#fff176</color>
+    <color name="yellow400">#ffee58</color>
+    <color name="yellow500">@color/amarillo_internet</color>
+    <color name="yellow600">#fdd835</color>
+    <color name="yellow700">#fbc02d</color>
+    <color name="yellow800">#f9a825</color>
+    <color name="yellow900">#f57f17</color>
+    <color name="yellowA100">#ffff8d</color>
+    <color name="yellowA200">@color/personal_amarillo</color>
+    <color name="yellowA400">#ffea00</color>
+    <color name="yellowA700">#ffd600</color>
+
+    <!--Lime-->
+    <color name="lime50">#f9fbe7</color>
+    <color name="lime100">#f0f4c3</color>
+    <color name="lime200">#e6ee9c</color>
+    <color name="lime300">#dce775</color>
+    <color name="lime400">#d4e157</color>
+    <color name="lime500">#cddc39</color>
+    <color name="lime600">#c0ca33</color>
+    <color name="lime700">#afb42b</color>
+    <color name="lime800">#9e9d24</color>
+    <color name="lime900">#827717</color>
+    <color name="limeA100">#f4ff81</color>
+    <color name="limeA200">#eeff41</color>
+    <color name="limeA400">#c6ff00</color>
+    <color name="limeA700">#aeea00</color>
+
+    <!--teal-->
+    <color name="teal50">#e0f2f1</color>
+    <color name="teal100">#b2dfdb</color>
+    <color name="teal200">#80cbc4</color>
+    <color name="teal300">#4db6ac</color>
+    <color name="teal400">#26a69a</color>
+    <color name="teal500">@color/personal_verde</color>
+    <color name="teal600">#00897b</color>
+    <color name="teal700">#00796b</color>
+    <color name="teal800">#00695c</color>
+    <color name="teal900">#004d40</color>
+    <color name="tealA100">#a7ffeb</color>
+    <color name="tealA200">#64ffda</color>
+    <color name="tealA400">#1de9b6</color>
+    <color name="tealA700">#00bfa5</color>
+
+    <!--Orange-->
+    <color name="orange50">#fbe9e7</color>
+    <color name="orange100">#ffccbc</color>
+    <color name="orange200">#ffab91</color>
+    <color name="orange300">#ff8a65</color>
+    <color name="orange400">#ff7043</color>
+    <color name="orange500">#ff5722</color>
+    <color name="orange600">#f4511e</color>
+    <color name="orange700">#e64a19</color>
+    <color name="orange800">#d84315</color>
+    <color name="orange900">#bf360c</color>
+    <color name="orangeA100">#ff9e80</color>
+    <color name="orangeA200">#ff6e40</color>
+    <color name="orangeA400">#ff3d00</color>
+    <color name="orangeA700">#dd2c00</color>
+
+    <!--Gray-->
+    <color name="gray50">#ECEFF1</color>
+    <color name="gray100">#CFD8DC</color>
+    <color name="gray200">#B0BEC5</color>
+    <color name="gray300">#90A4AE</color>
+    <color name="gray400">#78909C</color>
+    <color name="gray500">#607D8B</color>
+    <color name="gray600">#546E7A</color>
+    <color name="gray700">#455A64</color>
+    <color name="gray800">#37474F</color>
+    <color name="gray900">#263238</color>
+
+    <!--Red-->
+    <color name="red50">#FFEBEE</color>
+    <color name="red100">#FFCDD2</color>
+    <color name="red200">#EF9A9A</color>
+    <color name="red300">#E57373</color>
+    <color name="red400">#EF5350</color>
+    <color name="red500">#F44336</color>
+    <color name="red600">#E53935</color>
+    <color name="red700">#D32F2F</color>
+    <color name="red800">#C62828</color>
+    <color name="red900">#B71C1C</color>
+    <color name="redA100">#FF8A80</color>
+    <color name="redA200">#FF5252</color>
+    <color name="redA400">#FF1744</color>
+    <color name="redA700">#D50000</color>
+
+    <!--Colores packs presionado-->
+    <color name="pack_0_presionado">#ffff8e4a</color>
+    <color name="pack_1_presionado">#ff94a5da</color>
+    <color name="pack_2_presionado">#ffe92c49</color>
+    <color name="pack_3_presionado">#ff4665b5</color>
+    <color name="pack_4_presionado">#ff6dcc78</color>
+    <color name="pack_5_presionado">#ff038289</color>
+    <color name="pack_6_presionado">#795548</color>
+    <color name="pack_7_presionado">#4DD0E1</color>
+    <color name="pack_8_presionado">#AD1457</color>
+    <color name="pack_9_presionado">#607D8B</color>
+    
+    <!--Paleta de colores de personal-->
+    <color name="celeste_institucional">@color/personal_celeste</color>
+    <color name="verde_entretenimiento">@color/personal_verde</color>
+    <color name="amarillo_internet">@color/personal_amarillo</color>
+    <color name="rosado_sms">@color/personal_rosado</color>
+    <color name="fucsia_musica">@color/personal_fucsia</color>
+    <color name="lila_multimedia_envios">@color/personal_lila</color>
+    <color name="azul_personal">@color/personal_azul</color>
+    <color name="marron_llamadas">@color/personal_marron</color>
+    <color name="blanco_personal">#FCFCFC</color>
+    
+    <!-- Libreria PagerSlidingTabStrip -->
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="activate_text_color">#FF666666</color>
+    <color name="deactivate_text_color">#FFCCCCCC</color>
+    <color name="transparent">#00000000</color>
+    <color name="body_text_2_inverse">#8affffff</color>
+    <color name="body_text_1_inverse">#deffffff</color>
+    <color name="encabezado_1">@color/purple500</color>
+
+    <color name="dark_slate_gray">#2F4F4F</color>
+    <color name="gray_2">#AFAFAF</color>
+    <color name="gray_1">#C0C0C0</color>
+
+    <!--Colores Nelson-->
+    <color name="fucsia">#d11864</color>
+    <color name="fucsia_claro">#DD5F94</color>
+
+    <color name="rosado">#f483b3</color>
+    <color name="rosado_claro">#F4BCD4</color>
+
+    <color name="lila">#7d3c72</color>
+    <color name="lila_claro">#986590</color>
+
+    <color name="verde_agua">#007c83</color>
+    <color name="verde_agua_claro">#4FADB2</color>
+
+    <color name="gris_texto_boton">#40000000</color>
+    <color name="gris_fondo_boton">#1A000000</color>
+
+    <integer-array name="pocket_background_colors">
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_4</item>
+    </integer-array>
+
+    <color name="pocket_color_1">@color/personal_verde</color>
+    <color name="pocket_color_2">@color/personal_celeste</color>
+    <color name="pocket_color_3">@color/personal_fucsia</color>
+    <color name="pocket_color_4">@color/personal_amarillo</color>
+
+
+    <integer-array name="pocket_bar_colors">
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+    </integer-array>
+
+    <color name="personal_verde">#007B84</color>
+    <color name="personal_lila">#7A3C74</color>
+    <color name="personal_azul">#004C94</color>
+    <color name="personal_fucsia">#CE1465</color>
+    <color name="personal_marron">#564218</color>
+    <color name="personal_celeste">#00B0C5</color>
+    <color name="personal_negro">#000000</color>
+    <color name="personal_amarillo">#F2C007</color>
+    <color name="personal_rosado">#F184B5</color>
+
+    <!--Colores packs-->
+
+    <color name="pack_internet">#f2c007</color>
+    <color name="pack_spotify">#7eaf5b</color>
+    <color name="pack_internacionales">#ce1465</color>
+    <color name="pack_roaming">#007b84</color>
+    <color name="pack_tv">#47ccd6</color>
+    <color name="pack_combos">#7b3c75</color>
+    <color name="pack_mensajes">#f184b5</color>
+    <color name="pack_regalo">#004d96</color>
+    <color name="pack_default">#9FA8DA</color>
+
+    <color name="pack_0">#f2c007</color>
+    <color name="pack_1">#7eaf5b</color>
+    <color name="pack_2">#be2460</color>
+    <color name="pack_3">#007b84</color>
+    <color name="pack_4">#47ccd6</color>
+
+    <color name="lista_detalle_pack">#5a5a5a</color>
+
+    <!--<color name="pack_0">@color/personal_rosado</color>
+    <color name="pack_1">#9FA8DA</color>
+    <color name="pack_2">@color/personal_fucsia</color>
+    <color name="pack_3">@color/personal_azul</color>
+    <color name="pack_4">#9CCC65</color>-->
+    <color name="pack_5">@color/personal_verde</color>
+    <color name="pack_6">@color/personal_marron</color>
+    <color name="pack_7">@color/personal_celeste</color>
+    <color name="pack_8">#AD1457</color>
+    <color name="pack_9">#607D8B</color>
+
+    <color name="menu_lateral">#CC597884</color>
+    <color name="menu_lateral_divider">#2000B0C5</color>
+    <color name="menu_lateral_select">#F2597884</color>
+    <color name="menu_lateral_header">#00b4c5</color>
+
+    <color name="club_personal_fondo">#F7F6F8</color>
+
+</resources>

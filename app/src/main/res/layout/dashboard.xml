@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/dashboard_states">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_height="72dp"
+        android:layout_width="72dp"
+        android:scaleType="centerInside"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="4dp"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

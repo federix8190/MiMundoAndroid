@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressbar_icon"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/contenedor_formularios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/servicio_suspencion_desactivado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/titulo_estado"
+                    style="@style/subEncabezado1"
+                    android:textColor="@color/verde_entretenimiento"
+                    android:textSize="18sp"
+                    android:text="@string/titulo_estado_linea" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_below="@id/infoGrupoTitle"
+                    android:background="@color/gray100"
+                    android:paddingBottom="16dp" />
+
+                <include layout="@layout/linea_activada" />
+
+                <TextView
+                    android:id="@+id/motivos_suspension_title"
+                    style="@style/subEncabezado1"
+                    android:textColor="@color/verde_entretenimiento"
+                    android:textSize="18sp"
+                    android:text="@string/motivos_suspension_title" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_below="@id/infoGrupoTitle"
+                    android:background="@color/gray100"
+                    android:paddingBottom="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ListView
+                            android:id="@+id/contenedor_opciones"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="16dp"
+                            android:divider="@null"
+                            android:scrollbars="none" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/servicio_suspencion_activado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/titulo_estado_1"
+                    style="@style/subEncabezado1"
+                    android:textColor="@color/verde_entretenimiento"
+                    android:textSize="18sp"
+                    android:text="@string/titulo_estado_linea" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_below="@id/infoGrupoTitle"
+                    android:background="@color/gray100"
+                    android:paddingBottom="16dp" />
+
+                <include layout="@layout/linea_desactivada" />
+
+                <TextView
+                    android:id="@+id/restitucion_title"
+                    style="@style/subEncabezado1"
+                    android:textColor="@color/verde_entretenimiento"
+                    android:textSize="18sp"
+                    android:text="@string/linea_suspendida_title" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_below="@id/infoGrupoTitle"
+                    android:background="@color/gray100"
+                    android:paddingBottom="16dp" />
+
+                <RelativeLayout
+                    android:id="@+id/contenerdor_descripcion_restituir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/info_background"
+                    android:minHeight="56dp"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp">
+
+                    <TextView
+                        android:id="@+id/titulo_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="Líneas suspendidas"
+                        android:textColor="@color/titulo_primario_card_view"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/descripcion_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/titulo_info"
+                        android:padding="16dp"
+                        android:text="@string/descripcion_restitucion"
+                        android:textColor="@color/titulo_secundario_card_view"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/contenedor_boton_suspender"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="16dp"-->
+                <!--android:layout_marginBottom="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:gravity="right"-->
+                <!--android:visibility="gone">                -->
+
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/contenedor_boton_restituir"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"        -->
+        <!--android:visibility="gone">-->
+
+        <Button
+            android:id="@+id/suspender_action"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/minHeightRaisedButton"
+            android:background="@color/celeste_institucional"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="32dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/texto_boton_suspender"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/restituir_linea"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/minHeightRaisedButton"
+            android:background="@color/celeste_institucional"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/restituir_boton_restituir"
+            android:visibility="gone"
+            android:textColor="@color/white" />
+
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: org.roboguice:roboguice:1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.roboguice/roboguice/1.1/1a1695b14003f748800de20255a9ca3496caea8b/roboguice-1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.roboguice/roboguice/1.1/8bc72d1450a0cc9d3708509db681c85055c7c3f7/roboguice-1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.roboguice/roboguice/1.1/6a3e577a529032fc4bba6a9e69ed54313ac637d1/roboguice-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

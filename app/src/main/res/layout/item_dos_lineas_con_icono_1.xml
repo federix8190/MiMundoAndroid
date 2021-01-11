@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<py.com.personal.mimundo.disenhos.RelativeLayout1 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/switch_bakground"
+    android:gravity="center_vertical|left">
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical|left"
+        android:layout_height="72dp"
+        android:paddingLeft="16dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:minHeight="72dp"
+        android:paddingLeft="72dp">
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:textSize="16sp"
+            android:text="TEXTO"
+            android:textColor="@color/titulo_primario_lista"/>
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="TEXTO"
+            android:textSize="14sp"
+            android:textColor="@color/titulo_secundario_lista"/>
+    </LinearLayout>
+</py.com.personal.mimundo.disenhos.RelativeLayout1>

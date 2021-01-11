@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<py.com.personal.mimundo.disenhos.RelativeLayout2        -->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:layout_below="@+id/titulo_estado">-->
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/servicio_estado_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divisor_1"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical|left"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:src="@drawable/ic_equalizer"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:minHeight="72dp"
+            android:paddingLeft="72dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:textSize="16sp"
+                android:text="@string/titulo_primario_estado_servicio"
+                android:textColor="@color/titulo_primario_lista" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cargando datos..."
+                android:paddingBottom="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/titulo_secundario_lista" />
+        </LinearLayout>
+    </RelativeLayout>
+<!--</py.com.personal.mimundo.disenhos.RelativeLayout2>-->

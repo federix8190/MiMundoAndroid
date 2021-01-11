@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="nav_saldo_icons">
+        <item>ic_home1</item>
+        <item>ic_saldo</item>
+        <item>ic_consultas</item>
+        <item>ic_user</item>
+        <item>ic_club_personal</item>
+        <item>ic_billetera</item>
+        <item>ic_herramientas</item>
+        <item>ic_exit</item>
+    </array>
+    <array name="nav_drawer_icons">
+
+        <!-- Elementos del menu lateral -->
+        <item>ic_home_menu</item>
+        <item>ic_saldo_menu</item>
+        <item>ic_gestion_menu</item>
+        <item>ic_conf_menu</item>
+        <item>ic_phone2</item>
+        <item>ic_puntos_cercanos_menu</item>
+        <item>ic_club_menu</item>
+        <item>ic_billetera_menu</item>
+        <item>ic_personalplay_menu</item>
+        <item>ic_backtones_menu</item>
+        <item>ic_cambio_sim_menu</item>
+        <item>exit_menu</item>
+        <!-- Fin elementos del menu lateral -->
+    </array>
+    <array name="nav_gestion_icons">
+        <item>ic_home1</item>
+        <item>ic_saldo</item>
+        <item>ic_consultas</item>
+        <item>ic_user</item>
+        <item>ic_club_personal</item>
+        <item>ic_billetera</item>
+        <item>ic_herramientas</item>
+        <item>ic_exit</item>
+    </array>
+    <string name="app_name">Mi Mundo</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_section4">Section 4</string>
+    <string name="title_section5">Section 5</string>
+    <string name="hello_world">Hola mundo!</string>
+    <string name="action_settings">Configuración</string>
+    <string name="title_activity_perfil">PerfilActivity</string>
+
+    <!-- Nav Drawer Menu -->
+    <string name="title_activity_validar_creacion">Validar Linea</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Nav Drawer Menu Items -->
+
+
+    <!-- Elementos del menu lateral -->
+    <string name="title_activity_prueba">LoginActivity</string>
+    <!-- Fin elementos del menu lateral -->
+
+
+    <!-- Fragments en la seccion principal -->
+    <string name="drawer_open">Slider Menu Opened</string>
+    <!-- Fin de fragments en la seccion principal -->
+
+
+    <!-- Elementos del menu de Saldo -->
+    <string name="drawer_close">Slider Menu Closed</string>
+    <!-- Fin elementos del menu de Saldo -->
+
+
+    <!-- Fragments que se encuentran en la seccion de saldos -->
+    <string name="nav_saldo_icons">ic_home1</string>
+    <!-- Fin de fragments que se encuentran en la seccion de saldos -->
+
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <string name="operacion_exitosa">Operación exitosa</string>
+
+    <!-- Elementos del menu de Gestion -->
+    <string name="error_operacion">Error al ejecutar la operación</string>
+    <!-- Fin elementos del menu de Gestion -->
+
+
+    <!-- Fragments que se encuentran en la seccion de gestion -->
+    <string name="error_obtener_datos">Problemas al obtener los datos</string>
+    <!-- Fin de fragments que se encuentran en la seccion de gestion -->
+
+
+    <!-- Clases que son Fragments -->
+    <string name="error_actualizar_datos">Problemas al actualizar los datos</string>
+    <!-- Fin de clases que son Fragments -->
+
+    <string name="no_hay_datos">No se encontraron datos</string>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <string name="ejecutando_operacion">Ejecutando la operación</string>
+    <string name="error_obtener_datos_telefono">Problemas al obtener los planes del teléfono</string>
+
+    <!-- Content Description -->
+    <string name="error_obtener_datos_plan">Problemas al obtener los datos del plan</string>
+
+    <!-- Mensajes generico -->
+    <string name="sin_saldo">Sin saldo</string>
+    <string name="salir_app">Desea salir de la aplicacion?</string>
+    <string name="activacion_title">Activación</string>
+    <string name="desactivacion_title">Desactivación</string>
+    <string name="reactivar_btn">REACTIVAR</string>
+    <string name="confirmar_title">CONFIRMAR</string>
+    <string name="error_title">ERROR</string>
+    <string name="error_desconocido">Error desconocido</string>
+    <string name="estado_label">Estado</string>
+    <string name="dato_desconocido">DESCONOCIDO</string>
+    <string name="sin_servicio">Sin servicio</string>
+    <string name="confirma_operacion">Desea realizar esta operación?</string>
+    <string name="no_hay_lineas">No existen lineas</string>
+    <string name="ingresar_nro_linea">Ingrese un número de línea</string>
+    <string name="activacion_lineas_title">Activación de líneas</string>
+    <string name="cargando_datos">Cargando datos</string>
+    <string name="ahorro_bateria">Las aplicaciones que no se estén utilizando se deben cerrar, de lo contrario, aunque no se vean, están consumiendo energía</string>
+    <string name="ver_detalle">Ver detalles</string>
+    <string name="label_usuario_activity_login">Usuario</string>
+    <string name="hint_usuario_activity_login">CI/Nro Línea</string>
+    <string name="label_password_activity_login">Contraseña</string>
+    <string name="hint_password_activity_login">Contraseña</string>
+    <string name="label_olvidaste_activity_login">olvidaste tu contraseña</string>
+    <string name="label_no_usuario_activity_login">¿No tenés usuario para MiMundo?</string>
+    <string name="label_crear_cuenta_login">crear una cuenta</string>
+    <string name="button_ingresar_activity_login">INGRESAR</string>
+
+    <!-- Login -->
+    <string name="button_login">Iniciar sesión</string>
+    <string name="button_facebook_activity_login">Ingresa con Facebook</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="error_token_session_invalido">No se encontraron sesiones activas para el token.</string>
+    <string name="error_password_invalido">Debe ingresar una contraseña válida</string>
+    <string name="error_usuario_invalido">Debe ingresar un usuario válido</string>
+    <string name="login_error_desconocido">Error, intente de nuevo</string>
+    <string name="alta_usuario_title">Creación de usuario</string>
+    <string name="alta_usuario_confirmar_correo">Debe confirmar el correo electronico</string>
+    <string name="alta_usuario_ingresar_linea">Debe ingresar un numero de linea</string>
+    <string name="alta_usuario_confirmar_password">Debe confirmar la contraseña</string>
+    <string name="alta_usuario_ingresar_password">Debe ingresar la contraseña</string>
+    <string name="alta_usuario_ingresar_captcha">Debe ingresar el captcha</string>
+    <string name="alta_usuario_ingresar_pin">Debe ingresar el pin</string>
+    <string name="alta_usuario_error_password">Las contraseñas no coinciden</string>
+
+    <!-- Alta Usuario de linea -->
+    <string name="alta_usuario_pin_enviado">Se le ha enviado un Pin</string>
+    <string name="alta_usuario_error_envio_pin">Problema al enviar el pin</string>
+    <string name="alta_usuario_error_creacion">Error en la creacion de Usuario</string>
+    <string name="alta_usuario_error_server_creacion">La respuesta del CAPTCHA es incorrecta</string>
+    <string name="alta_usuario_creacion_exitosa">El Usuario se ha creado exitosamente</string>
+    <string name="alta_usuario_error_activacion">Error al activar el Usuario</string>
+    <string name="alta_usuario_validar_linea">Validar linea</string>
+    <string name="alta_usuario_hint_linea">número de linea</string>
+    <string name="alta_usuario_hint_pin">PIN</string>
+    <string name="alta_usuario_hint_email">correo electrónico</string>
+    <string name="alta_usuario_hint_codigo">código</string>
+    <string name="alta_usuario_hint_password">contraseña</string>
+    <string name="alta_usuario_hint_confirma_password">confirmar contraseña</string>
+    <string name="alta_usuario_btn_aceptar">Aceptar</string>
+    <string name="alta_usuario_btn_rechazar">RECHAZAR</string>
+    <string name="alta_usuario_acuerdo_title">ACUERDO</string>
+    <string name="alta_usuario_validacion_title">VALIDACIÓN</string>
+    <string name="alta_usuario_btn_crear_linea">CREAR LINEA</string>
+    <string name="alta_usuario_acuerdo_msg">
+
+        Primera: A través del presente documento declaro y acepto:
+                   1) haber recibido personalmente la clave de acceso original (PIN) asignada por
+                   NÚCLEO S.A. para la utilización del servicio, o 2) haber decidido utilizar
+                   como clave de acceso para la utilización del servicio la misma utilizada en
+                   Facebook. Dicha clave de acceso, en caso de ser la asignada por NÚCLEO S.A.
+                   solo será válida para la sesión de inicio del servicio y
+                   deberá ser cambiada al momento de ingresar por primera vez al sitio de
+                   autogestión.
+
+        \n\nSegunda: La clave de acceso ya sea asignada originalmente por
+                   NÚCLEO S.A. así como la clave modificada o la utilizada en otros
+                   servicios que sirvan para la validación será una clave privada e
+                   intransferible siendo de mi exclusiva responsabilidad la administración
+                   y confidencialidad de la misma.
+
+        \n\nTercera: En caso de no recordar la clave de acceso deberé
+                    en primera instancia solicitar a NÚCLEO S.A. la suspensión
+                    temporal del servicio de autogestión y posteriormente una nueva
+
+        \n\nCuarta: Por medio de la presente declaro que cualquier transacción
+                   realizada a través del servicio de autogestión, utilizando la clave de acceso
+                   asignada, modificada o elegida, será considerada como realizada personalmente y por
+                   ende no podrá ser desconocida por mi/nuestra parte.
+
+        \n\nQuinta: Tomamos conocimiento que la confidencialidad de las informaciones
+                   extraídas y operaciones realizadas a través de la página web, si bien
+                   serán protegidas por NÚCLEO S.A. de la mejor manera posible, son susceptibles
+                   de violación por parte de terceros, ya sea durante el proceso de transmisión
+                   como de almacenamiento, razón por la cual renuncio/renunciamos en forma expresa a
+                   reclamar a NÚCLEO S.A. cualquier tipo de indemnización por daños y perjuicios,
+                   directos o indirectos, o de plantear cualquier tipo de acción contra NÚCLEO S.A.
+                   sus administradores, ejecutivos o directores, ya sea de índole civil o criminal por
+                   la fuga de dichas informaciones u operaciones realizadas, en especial por eventuales fugas
+                   de información respecto a detalles de llamadas y/o mensajes, consumos, incremento de
+                   líneas de crédito, etc.
+
+        \n\nSexta: Las operaciones realizadas a través de la página web,
+                   aún cuando las mismas impliquen la asunción de mayores compromisos económicos
+                   a los originalmente contraídos en la solicitud de servicio suscripta para la activación
+                   de la o las líneas contratadas a mi/nuestro nombre, serán consideradas como
+                   realizadas y suscriptas por mi/nuestra parte, de modo que no podré/podremos alegar
+                   el desconocimiento de tales nuevas contrataciones, modificaciones o activaciones.
+
+        \n\nSéptima: El usuario será el único responsable por el manejo
+                   de la información a la que acceda a través de la página web, liberando a
+                   NÚCLEO de toda responsabilidad derivada o emergente del mal uso o difusión de
+                   dicha información.
+
+        \n\nOctava: Toda la información que me fuera suministrada a través de la
+                   pÁgina web es propiedad de NÚCLEO S.A. comprometiéndome a no alterarla y a mantenerla
+                   íntegramente, sin modificar su contenido independientemente del formato en el que la misma haya sido
+                   depositada o guardada.
+
+        \n\nNovena:  Tomo conocimiento de que NÚCLEO S.A. realizará sus mejores esfuerzos
+                   por mantener lo más actualizada posible la información disponible en su página web, no obstante,
+                   existe la posibilidad de que la información disponible se encuentre temporal o parcialmente desactualizada.
+
+        \n\nDécima: Tomo conocimiento de que NÚCLEO S.A. realizará sus mejores
+                   esfuerzos para brindar el acceso a un sitio seguro, no obstante sabemos y eximimos a NÚCLEO S.A. de toda
+                   responsabilidad derivada de eventuales daños y/o perjuicios directos o indirectos emergentes del ataque de virus
+                   a los dispositivos informáticos o celulares utilizados para acceder a la página web.
+
+        \n\nUndécima: Todos los servicios de información y reportes a los que acceda a través de la página web serán gratuitos.
+
+        \n\nDuodécima: NÚCLEO S.A. podrá crear o insertar enlaces entre su sitio Web
+                   y uno o más sitios Web operados por terceros. NÚCLEO S.A. no posee control sobre dichos sitios Web o
+                   sus contenidos. La existencia de tales enlaces no constituirá un aval otorgado por NÚCLEO S.A.
+                   respecto de dicho sitio Web, los contenidos del sitio Web, o los operadores de los sitios Web.
+
+        \n\nDécima Tercera:  NÚCLEO S.A. en cualquier momento podrá modificar, cambiar,
+                   y alterar contenidos de este sitio Web, incluso estos Términos y Condiciones, sin previo aviso. Los usuarios
+                   son responsables de consultar regularmente estos términos y condiciones. El uso continuo de este sitio Web
+                   por parte de los usuarios luego de cualquier modificación, cambio o alteración constituirá la
+                   aceptación de tal modificación, cambio o alteración.
+
+        \n\nDécima Cuarta: Los trabajos de autoría que contiene el sitio Web , incluyendo, pero
+                   sin limitarse a, todo diseño, texto, grabaciones de sonido e imágenes, son propiedad de NÚCLEO S.A,
+                   salvo que se indique algo distinto. Asimismo, cuando se indique algo distinto, no podrán copiarse, transmitirse,
+                   desplegarse, ejecutarse, distribuirse (con o sin compensación), licenciarse, alterarse, enmarcarse, almacenarse
+                   para un uso futuro o usarse de ninguna manera, total o parcialmente,
+
+        \n\nDécima Quinta: Núcleo S.A. podrá en cualquier momento suspender o
+                    restringir el acceso al servicio de autogestión sin previo aviso y sin responsabilidad, ni derecho a reclamos
+                    posteriores por mi parte.
+
+        \n\nDécima Sexta: En caso de controversias o reclamos derivados de la utilización de los
+                   servicios disponibles en la página web las partes acuerdan someterse a la jurisdicción y competencia de
+                   los tribunales ordinarios de la ciudad de Asunción, con expresa exclusión de cualquier otra que
+                   pudiera corresponder.
+
+    </string>
+    <string name="modificar_password_title">Modificar contraseña</string>
+    <string name="modificar_password_usuario_existe">Error. El usuario no existe</string>
+    <string name="modificar_password_ingresar_usuario">Debe ingresar el codigo del Usuario</string>
+    <string name="modificar_password_confirmar_pin">Confirmar PIN</string>
+    <string name="modificar_password_pin_invalido">Error. El PIN no es valido</string>
+    <string name="modificar_password_operacion_exitosa">Se ha modificado el password</string>
+    <string name="reset_password_tipo_envio">E-mail/SMS</string>
+
+    <string name="reset_canal_envio_hint">Canal de envio</string>
+
+    <!-- Modificar Password -->
+    <string name="reset_password_usuario_hint">CI / Nro de linea / RUC</string>
+    <string name="reset_password_destinatario">Correo Electrónico</string>
+    <string name="reset_password_btn_solicitar">SOLICITAR</string>
+    <string name="editar_perfil_title">Editar Perfil</string>
+    <string name="edit_button_text">Editar</string>
+    <string name="usuario_linea_title">Usuario de línea:</string>
+    <string name="saldo_actual_title">Saldo Actual:</string>
+    <string name="grupo_facturacion_title">Grupo de facturación</string>
+    <string name="tipo_linea_title">Tipo:</string>
+    <string name="numero_contrato_title">Número de contrato</string>
+    <string name="estado_contrato_title">Estado del contrato:</string>
+
+    <!-- Mi Perfil -->
+    <string name="estado_linea_title">Estado de la linea:</string>
+    <string name="debito_automatico_title">Débito Automático:</string>
+    <string name="tecnologia_linea_title">Tecnología:</string>
+    <string name="solicitar_detalle_consuno_button">Solicitar Detalle de Consumo</string>
+    <string name="ultimas_actividades_title">Ultimas Actividades</string>
+    <string name="detalle_consumo_title">Tu consumo en los ultimos tres dias</string>
+    <string name="detalle_consumo_descripcion">En esta seccion podes ver los consumos de tu linea</string>
+    <string name="saldo_title">Info de saldo</string>
+    <string name="packs_vigentes_title">Tus packs vigentes</string>
+    <string name="packs_vigentes_descripcion">En esta seccion podes verificar los packs vigentes para tu linea</string>
+    <string name="sin_datos_saldo">Sin datos de saldo...</string>
+
+    <!-- Consumo -->
+    <string name="sin_datos_consumo">Sin datos de consumo...</string>
+    <string name="sin_datos_usuario">Sin datos de usuario...</string>
+    <string name="pin_sesion_gestion_saldo">Por favor introduzca su pin</string>
+    <string name="pin_sesion_hint_edit_text">Ingrese su PIN</string>
+
+    <!-- Saldo -->
+    <string name="button_pin_validacion">Continuar</string>
+    <string name="error_pin_invalido">Debe ingresar un pin válido</string>
+    <string name="error_pin_validar">Error al validar el pin</string>
+    <string name="servicios_title">Servicios</string>
+    <string name="planes_title">Planes</string>
+    <string name="sin_planes">Sin planes</string>
+    <string name="linea_sin_planes">No posees planes para esta línea.</string>
+    <string name="error_obtener_planes">Error al traer los planes de la linea</string>
+    <string name="datos_personales_title">Tus datos personales</string>
+    <string name="datos_tu_linea_title">Datos de tu línea</string>
+    <string name="nombre_usuario">Nombre</string>
+
+
+    <!-- Servicios y planes -->
+    <string name="apellido_usuario">Apellido</string>
+    <string name="numero_documento">RUC / CI</string>
+    <string name="tipo_documento">Tipo de documento</string>
+    <string name="telefono_contacto">Telefono de contacto</string>
+    <string name="codigo_persona">Código de persona</string>
+
+    <!-- Seccion de modificacion de datos -->
+    <string name="email">Email</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="barrio">Barrio</string>
+    <string name="estado_linea">Estado de tu línea</string>
+    <string name="tipo_linea">Tipo de la línea</string>
+    <string name="tiene_debito_automatico">Tiene débito automático?</string>
+    <string name="direccion_particular">Dirección particular</string>
+    <string name="direccion_facturas">Dirección de entrega de facturas</string>
+    <string name="guardar_datos">GUARDAR</string>
+    <string name="marca_title">Marca</string>
+    <string name="modelo_title">Modelo</string>
+    <string name="imei_title">Imei</string>
+    <string name="tecnologia_title">Tecnología</string>
+    <string name="bandaGSM_title">Banda GSM</string>
+    <string name="gprs_title">GPRS</string>
+    <string name="mms_title">MMS</string>
+    <string name="java_title">Java</string>
+
+    <!-- Seccion de Equipos -->
+    <string name="wap_title">WAP</string>
+    <string name="streaming_title">Streaming</string>
+    <string name="pantallaColor_title">Pantalla Color</string>
+    <string name="camara_title">Camara</string>
+    <string name="mp3_title">MP3</string>
+    <string name="reproductorAac_title">Reproductor Aac</string>
+    <string name="tonoPolifonico_title">Tono Polifónico</string>
+    <string name="financiacion_title">Financiaciones</string>
+    <string name="cuotas_pagadas">Cuotas pagadas</string>
+    <string name="codigo_label">Código</string>
+    <string name="monto_financiado">Monto financiado</string>
+    <string name="saldo_label">Saldo</string>
+    <string name="fecha_inicio">Fecha inicio</string>
+    <string name="primer_vencimiento">Primer vencimiento</string>
+    <string name="grupos_title">GRUPOS DE FACTURACION</string>
+
+    <!-- Gestion de Financiaciones -->
+    <string name="detalle_grupo_title">Detalle del Grupo de Facturación</string>
+    <string name="numero_factura_label">NÚMERO DE FACTURA</string>
+    <string name="fecha_emision_label">FECHA DE EMISIÓN</string>
+    <string name="fecha_vencimiento_label">FECHA DE VENCIMIENTO</string>
+    <string name="direccion_label">DIRECCIÓN</string>
+    <string name="monto_label">MONTO</string>
+    <string name="iva_label">IVA</string>
+
+    <!-- Gestion de Facturacion -->
+    <string name="total_label">TOTAL</string>
+    <string name="codigo_title">Código:</string>
+    <string name="descripcion_grupo_title">Grupo Facturación:</string>
+    <string name="estado_title">Estado:</string>
+    <string name="dia_acreditacion_title">Día Acreditación:</string>
+    <string name="ultima_factura_title">Ultima factura:</string>
+    <string name="lineas_telefonia_title">Lineas de telefonía:</string>
+    <string name="lineas_internet_title">Lineas de internet:</string>
+    <string name="lineas_grupo_title">LINEAS</string>
+    <string name="factura_en_pdf">Factura en PDF</string>
+    <string name="descargando_datos">Descargando datos...</string>
+    <string name="error_obtener_datos_factura">No se pudo obtener las datos de la Factura</string>
+    <string name="error_obtener_detalle_factura">No se pudo obtener los detalles de la Factura</string>
+    <string name="monto_cuota_desconocido">Monto de cuota desconocido</string>
+    <string name="numero_factura_desconocido">Número de factura desconocido</string>
+    <string name="sin_datos_vencimiento">Sin datos de vencimiento</string>
+    <string name="error_obtener_lineas_grupo">No se pudo obtener las lineas del Grupo</string>
+    <string name="error_obtener_detalle_grupo">No se pudo obtener el resumen del Grupo</string>
+    <string name="info_grupo">Info de grupo: </string>
+    <string name="info_grupo_descripcion">DESCRIPCIÓN</string>
+    <string name="info_grupo_codigo">CÓDIGO</string>
+    <string name="info_grupo_estado">ESTADO</string>
+    <string name="info_grupo_dia_acreditacion">DÍA DE ACREDITACIÓN</string>
+    <string name="info_grupo_debito">DÉBITO AUTOMÁTICO</string>
+    <string name="info_grupo_lineas_telefonia">LÍNEAS DE TELEFONÍA</string>
+    <string name="info_grupo_lineas_internet">LÍNEAS DE INTERNET</string>
+    <string name="descargar_factura">Descargar Factura</string>
+    <string name="sin_grupos_facturacion">Sin grupos de facturación</string>
+    <string name="sin_grupos_para_esta_linea">No posee grupos de facturación para esta línea.</string>
+    <string name="emision_title">Emisión:</string>
+    <string name="vencimiento_title">Vencimiento:</string>
+    <string name="direccion_title">Dirección:</string>
+    <string name="monto_title">Monto:</string>
+    <string name="iva_title">IVA:</string>
+    <string name="total_title">Total:</string>
+    <string name="total_pagar_title">Total a Pagar:</string>
+    <string name="resumen_title">Resumen</string>
+
+    <!-- Detalle de Facturas -->
+    <string name="descripcion_title">Descripción:</string>
+    <string name="cuotas_pagas_title">Codigo</string>
+    <string name="codigo_financiacion_title">Codigo</string>
+    <string name="descargar_factura_btn">DESCARGAR FACTURA</string>
+    <string name="detalles_cuotas_title">Detalles de cuotas</string>
+    <string name="vencimiento_detalle_finaciacion_title">Vencimiento:</string>
+    <string name="factura_detalle_finaciacion_title">Factura:</string>
+    <string name="historial_prestamos_title">Prestamos Realizados</string>
+    <string name="historial_recarga_sos_title">Préstamos realizados</string>
+    <string name="fecha_recarga_sos">FECHA:</string>
+    <string name="costo_recarga_sos">COSTO:</string>
+    <string name="monto_recarga_sos">MONTO:</string>
+    <string name="numero_de_linea">Número de línea</string>
+    <string name="solicitar_title_button">Solicitar</string>
+    <string name="seleccion_monto_recarga_title">SELECCIONA EL MONTO DE RECARGA</string>
+    <string name="seleccion_opcion_recarga_spinner_title">Seleccione el monto a prestar</string>
+    <string name="acuerdo_recarga_saldo">Al seleccionar la opción de Comprar, expreso que estoy de acuerdo con los términos y condiciones del servicio.</string>
+    <string name="cabecera_detalle_financion_title">Estado de financiación</string>
+    <string name="seccion_usuario_perfil">Info de usuario</string>
+    <string name="seccion_linea_perfil">Info de línea</string>
+    <string name="titulo_equipo_fragment">Info del equipo</string>
+    <string name="grupos_facturacion_title">Grupos de facturación</string>
+    <string name="infoGrupoFacturacionTitle">Resumen de grupo de facturación</string>
+    <string name="facturas_grupo_facturacion_title">Últimas facturas</string>
+    <string name="packs_title">Elegí el pack que más te conviene!</string>
+    <string name="packs_costo">Costo:</string>
+    <string name="packs_vigencia">Vigencia:</string>
+    <string name="acreditar_packs_title">Acreditar Pack</string>
+    <string name="regalar_packs_title">Regalar Pack</string>
+    <string name="suscripcion_packs_title">Suscripción de Pack</string>
+    <string name="regalar_packs_button">REGALAR</string>
+    <string name="comprar_packs_button">COMPRAR</string>
+
+    <!-- Packs -->
+    <string name="activar_packs_button">ACTIVAR</string>
+    <string name="suscribir_packs_button">SUSCRIBIR</string>
+    <string name="error_obtener_packs">No se pudo obtener los Packs del Usuario</string>
+    <string name="opcion_sin_pakcs">Esta opción no posee ningún pack disponible..</string>
+    <string name="pedir_saldo_title">Pedir Saldo</string>
+    <string name="numero_linea_hint_pedir_saldo">9X.......</string>
+    <string name="mensaje_numero_linea_pedir_saldo">* Presiona el botón para pedir saldo!</string>
+    <string name="button_pedir_saldo">Pedir Saldo</string>
+    <string name="confirma_pedir_saldo">Desea pedir saldo a la línea seleccionada?</string>
+    <string name="pedido_saldo_exitoso">El pedido de saldo ha sido exitoso.</string>
+    <string name="error_pedido_saldo">Disculpe, el pedido de saldo ha fallado.</string>
+    <string name="error_formato_linea">El dato ingresado como línea destino no se encuentra en un formato válido</string>
+
+    <!-- Pedir Saldo -->
+    <string name="cambio_de_sim_title">Cambio de SIM</string>
+    <string name="tipo_cambio_sim">Tipo de Cambio</string>
+    <string name="cambio_de_sim_btn">Procesar</string>
+    <string name="confirma_cambio_sim">Desea realizar el cambio de SIM sobre la línea seleccionada?</string>
+    <string name="encender_flash">Encender Flash</string>
+    <string name="apagar_flash">Apagar Flash</string>
+    <string name="posicionar_barcode">Poné sobre el código de barra del chip</string>
+    <string name="prestamo_saldo_title">Prestamo Saldo</string>
+
+    <!-- Pedir Saldo -->
+    <string name="prestar_saldo">Prestar Saldo</string>
+    <string name="prestar_saldo_monto">Monto</string>
+    <string name="detalle_RCF_descripcion">Descripción:</string>
+    <string name="detalle_RCF_monto">Monto:</string>
+    <string name="detalle_RCF_fecha">Fecha:</string>
+    <string name="sin_datos_fecha">Sin datos de la fecha.</string>
+    <string name="monto_desconocido">Monto desconocido.</string>
+
+    <!-- Prestamo de Saldo -->
+    <string name="monto_recarga_desconocido">Monto de recarga desconocido.</string>
+    <string name="error_obtener_historial_prestamos">No se pudo obtener el historial de préstamos</string>
+    <string name="prestamo_saldo_exitoso">El préstamo de saldo ha sido exitoso.</string>
+    <string name="error_prestamo_saldo">Disculpe, el préstamo de saldo ha fallado.</string>
+    <string name="confirmar_prestamo_saldo">Desea realizar el préstamo de saldo del monto seleccionado?</string>
+    <string name="solicitando_prestamo">Solicitando Prestamo</string>
+    <string name="rcf_title">Recarga Contra Factura</string>
+    <string name="rcf_exitosa">La recarga contra factura ha sido exitosa.</string>
+    <string name="rcf_fallo">Disculpe, la recarga contra factura ha fallado.</string>
+    <string name="costo_recarga_desconocido">Costo de recarga desconocido.</string>
+    <string name="confirmar_rcf">Desea realizar la recarga contra factura por el monto seleccionado?</string>
+    <string name="no_hay_opciones_recarga">No posees opciones para la recarga.</string>
+    <string name="error_linea_sin_recarga">La línea no cuenta con el servicio de recarga contra factura.</string>
+    <string name="error_obtener_montos_recarga">Error al traer los montos para la recarga.</string>
+
+    <!-- Recarga contra Factura -->
+    <string name="error_obtener_historial_recargas">No se pudo obtener el historial de recargas</string>
+    <string name="limite_consumo_title">Aumento de Limite de Consumo</string>
+    <string name="datos_linea_title">DATOS LINEA</string>
+    <string name="perfiles_consumo_title">PERFILES DE CONSUMOS</string>
+    <string name="clase_comercial_title">Clase comercialización</string>
+    <string name="detalle_perfil">DETALLE PERFIL DE CONSUMO</string>
+    <string name="limite_consumo_actual_title">Límite consumo actual</string>
+    <string name="limite_consumo_monto_disponible">Monto disponible</string>
+    <string name="limite_consumo_actual">Límite actual</string>
+
+    <!-- Aumennto de Limite de consumo -->
+    <string name="limite_consumo_solicitado">Límite solicitado</string>
+    <string name="limite_consumo_modificar_btn">Modificar</string>
+    <string name="transferencia_saldo_title">Transferencia de Saldo</string>
+    <string name="transferencia_saldo_button">TRANSFERIR</string>
+    <string name="ingrese_monto_transferencia">Favor ingrese el monto que desea transferir.</string>
+    <string name="numero_linea_hint_transferencia_individual">Número destino</string>
+    <string name="mensaje_numero_linea_transferencia_individual">Ingrese el número al que queres transferir saldo</string>
+    <string name="monto_hint_transferencia_individual">Monto en Guaraníes</string>
+    <string name="mensaje_monto_transferencia_individual">Solamente se puede transferir crédito en guaraníes por este medio</string>
+    <string name="button_transferencia_individual">Transferir Saldo</string>
+
+    <!-- Transferencia de Saldo Individual -->
+    <string name="titulo_prestamo_saldo">Avisale a otra línea de Personal que te quedaste sin saldo y pedile que te recargue. Pedile a alguien que te transfiera saldo cuando vos estés sin saldo, la otra línea recibirá un mensaje de texto que le informará que estás sin saldo y necesitás que le transfieras saldo.</string>
+    <string name="sub_encabezado_pedi_saldo">Pedí saldo</string>
+    <string name="detalle_factura_title">Detalle de factura</string>
+    <string name="selector_lineas_title">Números de linea...</string>
+    <string name="loadinTextField">Cargando...</string>
+    <string name="more_information">Más info</string>
+    <string name="seleccione_una_linea">Debes seleccionar al menos un número de línea...</string>
+    <string name="seleccione_linea_origen_transferencia">Favor seleccione un número de línea desde el que desea transferir el saldo.</string>
+    <string name="seleccione_linea_destino_transferencia">Favor ingrese un número de línea al que desee transferir el saldo.</string>
+    <string name="error_linea_destino_transferencia">Solo puede existir una línea destino.</string>
+    <string name="error_seleccionar_tipo_saldo_transferencia">Favor ingrese al menos uno de los tipos de saldo que desea transferir.</string>
+    <string name="transferencia_saldo_exitosa">La transferencia de saldo ha sido exitosa.</string>
+    <string name="error_transferencia_saldo">Disculpe, la transferencia de saldo ha fallado.</string>
+    <string name="error_transferir_saldo">Ocurrió un error al transferir el saldo</string>
+
+    <!-- Transferencia de Saldo Corporativa -->
+    <string name="confirma_transferencia_saldo">Desea realizar la transferencia configurada?</string>
+    <string name="error_saldo_disponible">Sin servicio...</string>
+    <string name="sin_saldo_disponible">Disponible: sin saldo</string>
+    <string name="saldo_disponible_transferencia">Disponible: </string>
+    <string name="estado_servicio">Estado del servicio:</string>
+    <string name="descripcion_servicio_rcf">        Aquí podrás activar o desactivar el servicio de recargar tu plan y luego abonarlo en la siguiente factura.</string>
+    <string name="motivos_suspension_title">SUSPENDER LÍNEA POR</string>
+    <string name="suspender_btn">SUSPENDER</string>
+    <string name="suspension_voluntaria">VOLUNTARIA</string>
+    <string name="suspension_robo">ROBO</string>
+    <string name="suspension_extravio">EXTRAVÍO</string>
+    <string name="roaming_title">ROAMING</string>
+
+    <!-- Configuraciones -->
+    <string name="activar_roaming_btn">ACTIVAR</string>
+    <string name="seleccionar_terminal_btn">SELECCIONAR TERMINAL</string>
+    <string name="roaming_prepago">ROAMING PREPAGO</string>
+    <string name="roaming_full">Roaming full</string>
+    <string name="titulo__transferencia_paso_1">Selecciona una o más líneas orígenes</string>
+    <string name="titulo__transferencia_paso_1_ingresar">Ingrese una o más líneas orígenes</string>
+    <string name="titulo__transferencia_paso_2_ingresar">Ingrese una o más líneas destinos</string>
+    <string name="transferencia_titulo_destinos">Selecciona una o más líneas destinos</string>
+    <string name="guardar_destinos_gratuitos">Desea guardar los destinos gratuitos</string>
+    <string name="error_obtener_cantidad_destinos">No se puede traer la cantidad</string>
+    <string name="envio_solicitud_exitosa">Gracias! Tu solicitud será atentida en un plazo máximo de 24 horas.</string>
+    <string name="servicio_inhabilitado">El usuario no cuenta con el servicio habilitado</string>
+    <string name="no_existen_operadoras">No existen operadoras para este continente</string>
+    <string name="error_obtener_datos_terminal">No se pudo obtener los datos de la Terminal</string>
+    <string name="error_obtener_operadoras">No se pudo obtener las operadoras para Roaming</string>
+    <string name="activacion_roaming_exitosa">Activación exitosa</string>
+    <string name="activacion_roaming_fallida">Activación fallida</string>
+    <string name="roaming_desactivacion_exitosa">Desactivación exitosa</string>
+    <string name="roaming_desactivacion_fallida">Desactivación fallida</string>
+    <string name="error_obtener_marcas_terminales">No se pudo obtener las marcas de terminal disponibles</string>
+    <string name="error_obtener_modelos_terminales">No se pudo obtener los modelos de terminal disponibles</string>
+    <string name="roaming_confirmar_activacion">Desea activar el servicio?</string>
+    <string name="roaming_confirmar_desactivacion">Desea desactivar el servicio?</string>
+    <string name="confirmar_suspender_linea">Desea suspender la línea?</string>
+    <string name="confirmar_reactivar_linea">Desea reactivar la línea?</string>
+    <string name="error_suspension">No se puede realizar la operación sobre la línea : La línea debe ser POSPAGA o CONTROL</string>
+    <string name="tipo_reclamo">Tipo de reclamos</string>
+    <string name="comentarios_label">Deja aquí tus comentarios</string>
+    <string name="comentarios_hint">¿Tenés un comentario?</string>
+    <string name="enviar_reclamo">Enviar</string>
+    <string name="nombres_apellidos_label">Nombres y Apellidos</string>
+
+    <!-- Suspensiones -->
+    <string name="email_label">Email</string>
+    <string name="nro_linea_label">Número de linea</string>
+    <string name="sugerencias_label">Dejanos tu consulta</string>
+
+    <!-- Reclamos -->
+    <string name="envio_sugerencias">Atencion Personal</string>
+    <string name="activacion_lineas_tipo_plan">Selecciona las características</string>
+    <string name="activacion_lineas_selecccionar_terminal">Selecciona una terminal</string>
+    <string name="activacion_lineas_planes_title">Planes</string>
+
+    <!-- Sugerencias -->
+    <string name="activacion_lineas_corp_title">Datos para activacion de lineas</string>
+    <string name="activacion_lineas_planes_costos">Planes y costos</string>
+    <string name="activacion_lineas_tipo_plan_control">Plan Control</string>
+    <string name="activacion_lineas_tipo_plan_pospago">PosPago</string>
+    <string name="activacion_lineas_terminal">TERMINAL</string>
+
+    <!-- Activacion de lineas -->
+    <string name="activacion_lineas_btn_siguiente">SIGUIENTE</string>
+    <string name="activacion_lineas_con_terminal">Con Terminal</string>
+    <string name="activacion_lineas_sin_terminal">Sin Terminal</string>
+    <string name="activacion_lineas_terminal_internet">Internet</string>
+    <string name="activacion_lineas_razon_social">Razón social</string>
+    <string name="activacion_lineas_nombre_contacto">Nombre de contacto</string>
+    <string name="activacion_lineas_cantidad_lineas">Cantidad de líneas a activar</string>
+    <string name="activacion_lineas_numero_contacto">Número de contacto</string>
+    <string name="activacion_lineas_horario_disponible">Horario disponible</string>
+    <string name="activacion_lineas_descripcion_plan">Descripción del plan</string>
+    <string name="activacion_lineas_total_plan">$ TOTAL PLAN</string>
+    <string name="activacion_lineas_btn_solicitar">SOLICITAR</string>
+    <string name="activacion_lineas_total_llamada">Llamada</string>
+    <string name="activacion_lineas_total_mensajes">Mensajes</string>
+    <string name="activacion_lineas_total_datos">Datos</string>
+    <string name="activacion_lineas_seleccionar_plan">Planes de internet</string>
+    <string name="activacion_lineas_monto_cuota">Monto cuotas del teléfono</string>
+    <string name="activacion_lineas_cantidad_cuotas_pago">Cantidad de cuotas pago de teléfono</string>
+    <string name="activacion_lineas_monto_plan">Monto del Plan</string>
+    <string name="ingresar_nombre_contacto">Debe ingresar el nombre del contacto</string>
+    <string name="ingresar_apellido_contacto">Debe ingresar el apellido del contacto</string>
+    <string name="ingresar_numero_contacto">Debe ingresar el numero del contacto</string>
+    <string name="ingresar_cantidad_lineas">Debe ingresar la cantidad de lineas</string>
+    <string name="ingresar_horario_disponible">Debe ingresar el horario disponible</string>
+    <string name="ingresar_descripcion_plan">Debe ingresar la descripcion del plan</string>
+    <string name="ingresar_monto_plan_llamadas">Debe ingresar el monto deseado para el plan de llamdas</string>
+    <string name="ingresar_monto_plan_mensajes">Debe ingresar el monto deseado para el plan de mensajes</string>
+    <string name="ingresar_monto_plan_datos">Debe ingresar el monto deseado para el plan de datos</string>
+    <string name="activacion_lineas_permanencia_minima_plan">Permanencia mínima en el plan</string>
+    <string name="activacion_lineas_descripcion_plan_internet_hint">        Si el plan no se encuentra en la lista ingrese aquí su plan deseado...</string>
+    <string name="cambio_planes_title">Cambio de planes</string>
+    <string name="cambio_plan_telefonia_title">Cambio de Plan Telefonia</string>
+    <string name="cambio_plan_internet_title">Cambio de Plan Internet</string>
+    <string name="cambio_plan_plan_llamada_title">PLAN DE LLAMADAS</string>
+    <string name="cambio_plan_plan_mensaje_title">PLAN DE MENSAJES</string>
+    <string name="cambio_plan_plan_datos_title">Tu plan de datos</string>
+    <string name="cambio_plan_comparativo_title">COMPARATIVO PLAN VS HISTORIAL CONSUMO</string>
+    <string name="cambio_plan_plan_actual">Plan Actual</string>
+
+    <!-- Cambio de Plan -->
+    <string name="cambio_plan_plan_historial">Historial Consumo</string>
+    <string name="cambio_plan_telefono_plan_title">TELÉFONO CON PLAN</string>
+    <string name="cambio_plan_opciones">OPCIONES</string>
+    <string name="cambio_plan_planes_title">Planes disponibles para tu línea</string>
+    <string name="cambio_plan_tipo_moneda_gs">gs.</string>
+    <string name="cambio_plan_tipo_moneda_usd">usd</string>
+    <string name="cambio_plan_observaciones_title">OBSERVACIONES</string>
+    <string name="cambio_plan_observaciones_msg">Aquí puede agregar sus observaciones.</string>
+    <string name="cambio_plan_observaciones_hint">¿Tiene una observación?</string>
+    <string name="seleccione_plan">Seleccione un plan</string>
+    <string name="error_obtener_planes_linea">No se pudo obtener los planes de la línea</string>
+    <string name="error_obtener_planes_sugeridos">No se encontraron los planes sugeridos</string>
+    <string name="consumo_promedio">Su consumo en promedio es Gs. </string>
+    <string name="plan_recomendado">El plan recomendado es el plan de Gs. </string>
+    <string name="title_activity_modificar_datos_usuario">Tus datos</string>
+    <string name="titulo_monto_transferencia">Montos a transferir</string>
+    <string name="descripcion_suspension_extravio">Extravio</string>
+    <string name="descripcion_suspension_voluntaria">Decisión voluntaria</string>
+    <string name="descripcion_suspension_robo">Robo</string>
+    <string name="linea_suspendida_title">Info sobre suspensión</string>
+    <string name="descripcion_restitucion">Tené en cuenta que las líneas suspendidas, de igual manera generan cargos por el abono mensual.</string>
+    <string name="restituir_boton_restituir">RESTITUIR</string>
+
+    <string name="error_acceso">No se puede acceder a esta pantalla</string>
+
+    <string name="club_personal_title">CLUB PERSONAL</string>
+    <string name="club_personal_beneficios_msg_1">descubrí el club</string>
+    <string name="club_personal_beneficios_msg_2">personal y todos</string>
+    <string name="club_personal_beneficios_msg_3">los beneficios</string>
+    <string name="club_personal_beneficios_msg_4">exclusivos</string>
+    <string name="club_personal_asociar_msg_1">ASOCIARME GRATIS</string>
+    <string name="club_personal_asociar_msg_2">LLAMANDO AL</string>
+    <string name="club_personal_asociar_msg_3">*2582</string>
+    <string name="club_personal_msg_1">ASOCIATE AL CLUB PERSONAL Y DISFRUTÁ DE UN MUNDO DE VENTAJAS.</string>
+
+    <!-- Club Personal -->
+    <string name="club_personal_msg_2">Descargá la APP donde podés:</string>
+    <string name="club_personal_msg_3">COMUNICATE CON NOSOTROS POR EL MEDIO QUE MÁS TE GUSTE</string>
+    <string name="club_personal_mail">club.personal@personal.com.py</string>
+    <string name="club_personal_telefono">021 217 7000</string>
+    <string name="error_acceso_club_personal">No tiene permiso para acceder al Club Personal</string>
+    <string name="billetera_personal_msg_1">Billetera personal es la nueva manera de pagar y transferir dinero con tu teléfono celular.</string>
+    <string name="billetera_personal_msg_2">Personal te permite ahora guardar dinero en tu teléfono para utilizarlo luego como quieras y cuando quieras,
+        con toda la seguridad que nos dá tener el respaldo del Banco Atlas, Banco Continental y Financiera el Comercio.</string>
+    <string name="billetera_personal_msg_3">CÓMO TENGO MI BILLETERA PERSONAL?</string>
+    <string name="billetera_personal_msg_4">Llamás al <b>*100#</b> desde tu Personal, seguís las instrucciones, y en menos de 5 min ya tenes creada tu cuenta.</string>
+    <string name="titulo_roaming_full_descripcion">Viaja manteniendo tu mismo número</string>
+    <string name="parrafo_roaming_full_descripcion">Con el servicio de roaming Personal podés viajar al extranjero y realizar y recibir llamadas,
+        enviar y recibir mensajes de texto, navegar en internet, siempre manteniendo tu mismo número.</string>
+    <string name="titulo_roaming_prepago_descripcion">Usá tu línea en el exterior sin trámites</string>
+    <string name="parrafo_roaming_prepago_descripcion_1">Desde aquí podés activar o desactivar el servicio de Roaming prepago para usar tu línea en el exterior sin límites.</string>
+    <string name="parrafo_roaming_prepago_descripcion_2">Solo es necesario que tengas saldo y un equipo compatible con el país a donde vas.</string>
+
+    <!-- Billetera Personal -->
+    <string name="titulo_estado">ESTADO DEL SERVICIO</string>
+    <string name="titulo_roaming_por_continente">OPERADORAS POR CONTINENTE</string>
+    <string name="texto_boton_suspender">SUSPENDER</string>
+    <string name="titulo_estado_linea">ESTADO DE LÍNEA</string>
+
+    <!-- Roaming -->
+    <string name="titulo_terminal_roaming">DETALLES DE TERMINAL</string>
+    <string name="titulo_seleccion_terminal_roaming">Selecciona la marca y modelo de tu terminal</string>
+    <string name="recarga_description_1">Este servicio tiene límites, es decir, puede solicitar hasta 5 veces una
+        recarga de saldo, ó hasta 50% de su abono por ciclo de facturación.</string>
+    <string name="recarga_description_2">Al cancelar la factura este ciclo se renueva.</string>
+    <string name="recarga_contrafactura_title">RECARGA CONTRA FACTURA</string>
+    <string name="recarga_contrafactura_descripcion">Info sobre recarga c/ factura</string>
+    <string name="titulo_primario_estado_servicio">Estado</string>
+    <string name="titulo_tipo_transferencia">Tipos de transferencias</string>
+    <string name="titulo_datos_generales">General</string>
+    <string name="titulo_datos_pantalla">Pantalla</string>
+    <string name="titulo_datos_cpu">CPU</string>
+    <string name="titulo_pedido_exitoso">PEDIDO EXITOSO</string>
+    <string name="titulo_items_solicitados">ITEMS SOLICITADOS</string>
+    <string name="msg_pedido_exitoso">Nos pondremos en contacto contigo en 48hs para concretar tu pedido.</string>
+    <string name="titulo_datos_personales">DATOS PERSONALES</string>
+    <string name="agregar_carrito_button">AÑADIR</string>
+    <string name="agregar_carrito_msg">Desea agregar este telefono al carrito?</string>
+
+    <!-- Compra de terminales -->
+    <string name="agregar_carrito_error">Error al agregar item</string>
+    <string name="agregar_item">Agregar item</string>
+    <string name="carrito_vacio">El carrito de compra esta vacio.</string>
+    <string name="error_obtener_terminales">Problemas al obtener los terminales</string>
+    <string name="seleccionar_telefono">Seleccione los telefonos que desee comparar</string>
+    <string name="seleccione_hasta_tres_telefonos">Solo puede comparar hasta 3 telefonos</string>
+    <string name="confirmar_pedido_faltan_datos">Debe completar todos los datos</string>
+    <string name="confirmar_pedido_error_nro_contacto">Tu número de contacto debe tener al menos 6 dígitos</string>
+    <string name="confirmar_pedido_solicitando">Solicitando Pedido</string>
+    <string name="confirmar_pedido_error_solicitud">Problemas al realizar la solicitud</string>
+    <string name="titulo_precio_total">Precio Total</string>
+    <string name="titulo_total">Total</string>
+    <string name="titulo_cantidad">Cantidad</string>
+    <string name="titulo_total_por_mes">Total a pagar por mes</string>
+    <string name="numero_telefono">Número de teléfono</string>
+    <string name="email_hint">tu email</string>
+    <string name="localidad_hint">Localidad</string>
+    <string name="horario_hint">Horario para contactarte</string>
+    <string name="numero_orden">Numero de orden</string>
+    <string name="numero_contactar_hint">un número para contactarte</string>
+    <string name="confirmar_pedido_btn">CONFIRMAR PEDIDO</string>
+    <string name="volver_listado_btn">Volver a ver los teléfonos</string>
+    <string name="codigo_plan_llamadas">Codigo plan llamadas</string>
+    <string name="codigo_plan_mensajes">Codigo plan mensajes</string>
+    <string name="codigo_plan_datos">Codigo plan datos</string>
+    <string name="porcentaje_descuento">Porcentaje de descuento</string>
+    <string name="codigo_producto">Codigo del producto</string>
+    <string name="cargo_monto">Cargo del monto</string>
+    <string name="descripcion_label">Descripción</string>
+    <string name="modelo_label">Modelo</string>
+    <string name="codigo_kml_label">Codigo KML</string>
+    <string name="id_producto_label">Id del producto</string>
+    <string name="id_marca_label">Id de la marca</string>
+    <string name="nombre_label">Nombre</string>
+    <string name="descuento_label">Descuento</string>
+    <string name="id_categoria_label">ID de la categoria</string>
+    <string name="puntos_label">Puntos</string>
+    <string name="string_cargando">Cargando...</string>
+    <string name="string_gratis">Gratis!!!</string>
+    <string name="backtones_title">Backtones</string>
+    <string name="backtones_dialogo_titulo_comprar_tono">Comprar Tono</string>
+    <string name="backtones_ingrese_linea">Ingrese el numero de linea:</string>
+    <string name="backtones_asignar_linea">Asignar Linea</string>
+    <string name="backtones_desea_activar">¿Está seguro que desea activar el Backtone?</string>
+    <string name="backtones_realizando_compra">Realizando compra</string>
+    <string name="backtones_compra_exitosa">Compra exitosa</string>
+    <string name="backtones_comprar">Comprar</string>
+    <string name="backtones_activar">Activar</string>
+
+    <!-- Backtones -->
+    <string name="backtones_cancelar">Cancelar</string>
+    <string name="backtones_asignar">Asignar</string>
+    <string name="backtones_grupo_title">Grupo</string>
+    <string name="backtones_error_obtener_grupo">Error al obtener el Grupo, intente de nuevo.</string>
+    <string name="backtones_nombre_grupo_hint">Nombre del grupo...</string>
+    <string name="backtones_eliminar_linea_grupo">Eliminar Linea</string>
+    <string name="backtones_desea_eliminar_linea_grupo">¿Está seguro que desea eliminar la línea %s del grupo?</string>
+    <string name="backtones_grupo_creado">Nuevo grupo creado</string>
+    <string name="backtones_creando_grupo">Creando grupo...</string>
+    <string name="backtones_ver_detalle">Ver detalles</string>
+    <string name="title_activity_packs_de_saldo">PacksDeSaldo</string>
+    <string name="title_activity_consumo_limitado">ConsumoLimitadoActivity</string>
+    <string name="title_activity_reproduccion_backtone">Backtone</string>
+    <string name="reproducir_backtones_indicador">Para tu línea: %s. Agrega el tema como tono!</string>
+    <string name="title_activity_tuto">TutoActivity</string>
+    <string name="title_activity_reclamos">ReclamosActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_atencion_personal">AtencionPersonalActivity</string>
+    <string name="title_activity_billetera_personal">BilleteraPersonal</string>
+    <string name="tip_1_title">Bienvenido</string>
+    <string name="tip_1_description">Registrate para disfrutar de todos los beneficios que tendrás con mi mundo.</string>
+    <string name="tip_2_title">Mira tus líneas</string>
+    <string name="tip_2_description">Mi Mundo te permite verificar todas tus líneas en cualquier momento
+        Incluso podés ver las llamadas recibidas de cada línea y también los mensajes.</string>
+    <string name="tip_3_title">Club Personal</string>
+    <string name="tip_3_description">Vas a poder saber tus puntos acumulados del club Personal, o si querés bajarte la app del club.</string>
+    <string name="tip_4_title">Comprar</string>
+    <string name="tip_4_description">No importa si tenés plan o no podes comprar packs de minutos datos o SMS</string>
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Saldo</item>
+        <item>Gestión</item>
+        <item>Configuración</item>
+        <item>Compra de Terminal</item>
+        <item>Puntos Cercanos</item>
+        <item>Club Personal</item>
+        <item>Billetera Personal</item>
+        <item>Personal Play</item>
+        <item>Backtones</item>
+        <item>Cambio de SIM</item>
+        <item>Salir</item>
+    </string-array>
+
+    <!-- Tips -->
+    <string-array name="codigo_nav_drawer_items">
+        <item>HomeFragment</item>
+        <item>saldo</item>
+        <item>gestion</item>
+        <item>ConfiguracionFragment</item>
+        <item>ListaTelefonos</item>
+        <item>MapaFragment</item>
+        <item>ClubPersonalFragment</item>
+        <item>BilleteraPersonalFragment</item>
+        <item>PersonalPlayFragment</item>
+        <item>GrupoCategoriaBacktonesFragment</item>
+        <item>CambioSimFragment</item>
+        <item>salir</item>
+    </string-array>
+    <string-array name="nav_drawer_items_saldo">
+        <!--<item>Límite de Consumo</item>-->
+        <item>Packs</item>
+        <item>Pedir Saldo</item>
+        <item>Prestar Saldo</item>
+        <item>Recarga contra Factura</item>
+        <item>Transferencia de saldo</item>
+    </string-array>
+
+    <string-array name="codigo_nav_drawer_items_saldo">
+        <!--<item>AumentoLimiteConsumo</item>-->
+        <item>ListaPacks</item>
+        <item>PedirSaldo</item>
+        <item>PrestamoSaldoFragment</item>
+        <item>RecargaSos</item>
+        <item>RecargaContraFactura</item>
+        <item>TansferenciaSaldoIndividual</item>
+        <!--
+        <item>TansferenciaSaldoCorporativo</item>
+        <item>TansferenciaSaldoIndividual</item>
+        -->
+    </string-array>
+    <string-array name="nav_drawer_items_gestion">
+        <!--<item>Activación de Líneas</item>
+        <item>Cambio de Plan Telefonia</item>
+        <item>Cambio de Plan Internet</item>-->
+        <item>Facturas</item>
+        <item>Grupos de Facturación</item>
+        <item>Financiación</item>
+    </string-array>
+
+    <string-array name="codigo_nav_drawer_items_gestion">
+        <!--<item>ActivacionLineasTelefonia</item>
+        <item>CambioPlanTelefonia</item>
+        <item>CambioPlanInternetFragment</item>-->
+        <item>ListaGruposFacturacion</item>
+        <item>ListaFinanciacion</item>
+        <item>Facturas</item>
+    </string-array>
+    <string-array name="items_fragments">
+        <item>HomeFragment</item>
+        <item>ListaPacks</item>
+        <item>PedirSaldo</item>
+        <item>PrestamoSaldoFragment</item>
+        <item>RecargaSos</item>
+        <item>AumentoLimiteConsumo</item>
+        <item>RecargaContraFactura</item>
+        <item>TansferenciaSaldoIndividual</item>
+        <item>ActivacionLineasTelefonia</item>
+        <item>CambioPlanTelefonia</item>
+        <item>CambioPlanInternetFragment</item>
+        <item>ListaGruposFacturacion</item>
+        <item>Facturas</item>
+        <item>ListaFinanciacion</item>
+        <item>TansferenciaSaldoCorporativo</item>
+        <item>TansferenciaSaldoIndividuals</item>
+        <item>ConfiguracionFragment</item>
+        <item>MapaFragment</item>
+        <item>ClubPersonalFragment</item>
+        <item>PersonalPlayFragment</item>
+        <item>GrupoCategoriaBacktonesFragment</item>
+        <item>ListaTelefonos</item>
+        <item>BilleteraPersonalFragment</item>
+        <item>CambioSimFragment</item>
+    </string-array>
+
+    <string-array name="coloresPacks">
+        <item>#4DD0E1</item>
+        <item>#FF8A65</item>
+        <item>#9FA8DA</item>
+        <item>#E91E63</item>
+        <item>#3F51B5</item>
+        <item>#9CCC65</item>
+        <item>#00897B</item>
+        <item>#795548</item>
+        <item>#AD1457</item>
+        <item>#607D8B</item>
+    </string-array>
+    <string-array name="array_tipo_saldo_TFCorp">
+        <item>Moneda</item>
+        <item>Mensajes</item>
+        <item>Minutos</item>
+    </string-array>
+
+
+</resources>

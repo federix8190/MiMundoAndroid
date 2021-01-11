@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left|center_vertical"
+    android:minHeight="56dp"
+    android:paddingBottom="4dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:src="@drawable/ic_nros_gratuitos_conf"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <EditText
+        android:id="@+id/linea_destino_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/gray400"
+        android:layout_toLeftOf="@+id/eliminar_destino_btn"
+        android:hint="Disponible"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:paddingRight="8dp" />
+
+    <ImageButton
+        android:id="@+id/eliminar_destino_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_clear" />
+</RelativeLayout>

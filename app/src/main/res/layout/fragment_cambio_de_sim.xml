@@ -1,0 +1,280 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cambioSimFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressbar_login"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pantalla"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">     <!-- gone -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="30"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="left"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="32dp"
+                    android:background="@color/celeste_institucional"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:src="@drawable/ic_cambio_sim_menu" />
+
+                    <TextView
+                        android:id="@+id/title_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Cambio de SIM "
+                        android:textColor="@color/white"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <py.com.personal.mimundo.disenhos.RelativeLayout2
+                    android:id="@+id/seccion_monedas"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="70"
+                    android:background="@color/formulario_background">
+
+                    <LinearLayout
+                        android:id="@+id/linea_seleccionada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="32dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/numro_linea_seleccionada"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/gray400"
+                            android:visibility="gone"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/nroLineaTitle"
+                            android:layout_width="wrap_content"
+                            android:text="Número de línea"
+                            android:visibility="gone"
+                            android:layout_height="wrap_content" />
+
+                        <RelativeLayout
+                            android:id="@+id/cargarLinea"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/nroLineaInput"
+                                android:layout_width="125dp"
+                                android:inputType="number"
+                                android:layout_height="wrap_content" />
+
+                            <Button
+                                android:id="@+id/cargarLineaOrigen"
+                                android:text="Cargar"
+                                android:layout_toRightOf="@+id/nroLineaInput"
+                                android:textColor="@color/white"
+                                android:background="@color/primario"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="8dp"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cuerpo_cambio_de_sim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linea_seleccionada"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tituloSimCard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="13 últimos dígitos de SIMCARD"
+                            android:textColor="@color/gray400"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/body_cambio_de_sim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cuerpo_cambio_de_sim"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <EditText
+                            android:id="@+id/simCard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:hint="xxx xxx xxx xxxx"
+                            android:inputType="number"
+                            android:minHeight="48dp"
+                            android:padding="8dp"
+                            android:paddingTop="8dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_toLeftOf="@+id/imgSimAceptado_sim"
+                            android:layout_toStartOf="@+id/imgSimAceptado_sim"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="0.08" />
+
+                        <ImageButton
+                            android:id="@+id/botonEscanearSim"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignBottom="@+id/simCard"
+                            android:layout_toLeftOf="@+id/simCard"
+                            android:layout_toStartOf="@+id/simCard"
+                            android:src="@drawable/ic_barcode_scan" />
+
+                        <ImageView
+                            android:id="@+id/imgSimAceptado_sim"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_aceptado"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/imgSimRechazado_sim"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_rechazado"
+                            android:visibility="gone" />
+
+                        <ProgressBar
+                            android:id="@+id/progress3_sim"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:visibility="gone" />
+
+
+                   </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/tipo_de_cambio"
+                        style="@style/conetnedorLabelEditTextStyle"
+                        android:layout_below="@id/body_cambio_de_sim"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="8dp"
+                        android:minHeight="60dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tipo_cambio_sim_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/tipo_cambio_sim"
+                            android:textColor="@color/gray400"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/tipo_cambio_sim_field"
+                            style="@style/spinnerActionBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tipo_de_cambio"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="32dp"
+                        android:gravity="right">
+
+                        <Button
+                            android:id="@+id/buttonCambioSim"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/minHeightRaisedButton"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/celeste_institucional"
+                            android:drawableLeft="@drawable/ic_check_pack"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:text="@string/cambio_de_sim_btn"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </py.com.personal.mimundo.disenhos.RelativeLayout2>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/stub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

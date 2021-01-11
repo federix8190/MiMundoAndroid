@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<py.com.personal.mimundo.disenhos.RelativeLayout1 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/switch_bakground"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:gravity="center_vertical|left">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_headset" />
+
+    <LinearLayout
+        android:id="@+id/contenedor_comprar_backtones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:background="@drawable/selectable_background_comprar_backtone"
+        android:layout_marginLeft="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/comprar_backtones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="11sp"
+            android:textColor="@color/fucsia" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contenedor_Tono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/contenedor_comprar_backtones"
+        android:layout_toRightOf="@+id/icono"
+        android:gravity="center_vertical|left"
+        android:minHeight="72dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:text="TEXTO"
+            android:textColor="@color/titulo_primario_lista"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="TEXTO"
+            android:textColor="@color/titulo_secundario_lista"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</py.com.personal.mimundo.disenhos.RelativeLayout1>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/search"
+        android:title="Marca, modelo..."
+        android:icon="@drawable/ic_search"
+        yourapp:showAsAction="ifRoom|collapseActionView"
+        yourapp:actionViewClass="android.support.v7.widget.SearchView" />
+
+    <item
+        android:id="@+id/ordenado_por"
+        android:enabled="false"
+        android:title="Ordenar por..." />
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/orden_nombre"
+            android:title="Nombre" />
+        <item
+            android:id="@+id/orden_precio"
+            android:title="Precio" />
+    </group>
+
+    <item
+        android:id="@+id/marca"
+        android:enabled="false"
+        android:title="Filtrar por marca" />
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/alcatel"
+            android:title="Alcatel" />
+        <item
+            android:id="@+id/blackberry"
+            android:title="Blackberry" />
+        <item
+            android:id="@+id/blu"
+            android:title="Blu" />
+        <item
+            android:id="@+id/huawei"
+            android:title="Huawei" />
+        <item
+            android:id="@+id/nokia"
+            android:title="Nokia" />
+        <item
+            android:id="@+id/samsung"
+            android:title="Samsung" />
+        <item
+            android:id="@+id/sony"
+            android:title="Sony" />
+    </group>
+
+    <item
+        android:id="@+id/sistema_operativo"
+        android:enabled="false"
+        android:title="Filtrar por SO" />
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/android_os"
+            android:title="Android" />
+        <item
+            android:id="@+id/blackberry_os"
+            android:title="Blackberry OS" />
+        <item
+            android:id="@+id/symbian"
+            android:title="Symbian OS" />
+        <item
+            android:id="@+id/windows_phone"
+            android:title="Windows Phone" />
+    </group>
+
+</menu>

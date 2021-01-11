@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <Spinner style="@style/spinnerActionBar"
+        android:id="@+id/selector_lineas"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+    <EditText
+        android:id="@+id/numero_linea_selector_field"
+        android:layout_width="110dp"
+        android:visibility="gone"
+        android:paddingLeft="4dp"
+        android:layout_marginRight="2px"
+        android:textColor="@color/white"
+        android:layout_height="match_parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/button_buscar_linea"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:tint="@color/white"
+        android:src="@drawable/ic_search" />
+
+</LinearLayout>

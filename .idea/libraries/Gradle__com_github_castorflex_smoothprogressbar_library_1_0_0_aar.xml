@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.castorflex.smoothprogressbar:library:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b4ea14f4025c5cb6fa368a2afbf42fe/jetified-library-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b4ea14f4025c5cb6fa368a2afbf42fe/jetified-library-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b4ea14f4025c5cb6fa368a2afbf42fe/jetified-library-1.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.castorflex.smoothprogressbar/library/1.0.0/7c1fea3980cc657099cc3485a5d2248b9590aa04/library-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.castorflex.smoothprogressbar/library/1.0.0/b66e11d85b11a0fd56f0bb7b803148c4f4802309/library-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

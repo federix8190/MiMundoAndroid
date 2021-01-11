@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+    <ScrollView
+        android:id="@+id/scroll_DetalleGrupoFacturacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp">
+
+            <TextView
+                android:id="@+id/primerTitulo"
+                style="@style/subEncabezado1"
+                android:layout_alignParentTop="true"
+                android:text="@string/infoGrupoFacturacionTitle" />
+
+            <View
+                android:id="@+id/divisor_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/primerTitulo"
+                android:background="@color/gray300"
+                android:paddingBottom="16dp" />
+
+            <ListView
+                android:id="@+id/listaDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divisor_1"
+                android:background="@android:color/white"
+                android:divider="@color/transparente"
+                android:paddingTop="16dp"
+                android:listSelector="@android:color/transparent" />
+
+            <LinearLayout
+                android:id="@+id/boton_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listaDetalle"
+                android:layout_marginBottom="16dp"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/descargar_factura_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/minHeightRaisedButton"
+                    android:background="@color/verde_entretenimiento"
+                    android:drawableRight="@drawable/ic_download_fact"
+                    android:padding="4dp"
+                    android:text="@string/descargar_factura"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <!--<TextView
+                android:id="@+id/segundoTitulo"
+                style="@style/subEncabezado1"
+                android:layout_below="@id/boton_container"
+                android:text="@string/resumen_title" />
+
+            <View
+                android:id="@+id/divisor_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/segundoTitulo"
+                android:background="@color/gray300" />-->
+
+            <ListView
+                android:id="@+id/listaDetalleResumen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_below="@id/boton_container"
+                android:background="@android:color/white"
+                android:listSelector="@android:color/transparent" />
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--style="@style/ThemeOverlay.AppCompat.Light"-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    android:gravity="center"
+    android:background="@drawable/selectable_background_example"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:textColor="@drawable/tab_text_color"
+    android:textSize="14sp"
+    android:textStyle="bold"/>

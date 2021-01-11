@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="70"
+        android:gravity="center_vertical|left"
+        android:orientation="vertical"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/numero_factura"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:textColor="@color/gray800"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/estado_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado:   "
+                android:textSize="14sp"
+                android:textColor="@color/gray800" />
+
+            <TextView
+                android:id="@+id/estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray400"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vencimiento_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vencimiento:   "
+                android:textSize="14sp"
+                android:textColor="@color/gray800" />
+
+            <TextView
+                android:id="@+id/vencimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray400"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/monto_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monto:   "
+                android:textSize="14sp"
+                android:textColor="@color/gray800" />
+
+            <TextView
+                android:id="@+id/monto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray400"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="30">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/button_ver_detalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/verde_entretenimiento"
+            android:drawableRight="@drawable/ic_view_detail"
+            android:paddingLeft="4dp"
+            android:paddingRight="8dp"
+            android:layout_gravity="right|center_vertical"
+            android:text="@string/ver_detalle"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

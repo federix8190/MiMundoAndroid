@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<py.com.personal.mimundo.disenhos.RelativeLayout1 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical|left"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/linea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:textColor="@color/titulo_primario_lista"
+        android:textSize="16sp" />
+
+    <!--<ImageView
+        android:id="@+id/eliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_clear"
+        android:gravity="center_vertical|center_horizontal" />-->
+
+</py.com.personal.mimundo.disenhos.RelativeLayout1>
